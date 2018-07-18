@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+Call.h"
 #import "UIViewController+Orientation.h"
 #import "UIViewController+StatusBar.h"
 
-@interface TSBaseViewController : UIViewController
+@interface TSBaseViewController : UIViewController <UIWebViewDelegate>
 
+@property(nonatomic,strong,readonly)UIPercentDrivenInteractiveTransition *interactivePopTransition;
+
+@property (nonatomic ,strong) UIWebView *phoneWebView;
 #pragma mark --- 添加子视图
 - (void)addOwnSubviews;
 
@@ -33,5 +35,8 @@
 
 - (void)prepareData;
 
+#pragma mark --- phone call
+
+- (void)call:(NSString *)phone;
 
 @end

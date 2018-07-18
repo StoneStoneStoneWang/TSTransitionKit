@@ -11,4 +11,7 @@
 @interface TSNavigationController : UINavigationController
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+
++ (void)initialize;
+
 @end
