@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052DDF774DE020428A13FCAA83E1F274 /* UITabBarController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 247B50A92DD84F31E691C85FB21D0BD5 /* UITabBarController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10F210C7DAB78731463DFE492540693C /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F2C8D134006891A5B3645329FF2B97 /* TSBaseViewController.m */; };
+		16B47F05F95BDDAAAD125F9C678C2141 /* UINavigationController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = F242CD29162BA1390679D948AE5FC76A /* UINavigationController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CBA817A4FE14C6D01ECD3875754F0D /* Pods-TSTSTransionKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C03CAE45149FC2BA7BFDFA71493EA50E /* Pods-TSTSTransionKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30BDD390430C88A5E38FF9DC4C8D6EEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		435CE4AB477007C4BB7BEDC3137DAF9C /* TS_UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBA57A871E47E8E0A83F129FDB5D052 /* TS_UIKit-dummy.m */; };
+		5564E582E8C080D3D5543C5C447ACC92 /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378EF92A20943918B091A6ED63AAED1 /* UIViewController+StatusBar.m */; };
+		5C7447E0F8111A904CB917D063085E55 /* UIViewController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = D9333833899D1F9D5E1AD6495309C9C8 /* UIViewController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		702470E16E59AF21E6AF34659647977C /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D51129AC859DAF4F939150AE4C82C42 /* TSNavigationController.m */; };
+		7F2E8FEAFAABC6D5A23A7D91BCB064C9 /* TS_UIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E140483EC266F35ADD6A771526B1E9 /* TS_UIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FE4591D04D7077E2A737CE3275FAF88 /* TSBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7677E51440E98FA4F6FE47E57827E9BB /* TSBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8637262FB3F0BB5254D9621D27CD916B /* UIViewController+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D46C1B0FEEC52E10421673F04413DC6 /* UIViewController+Call.m */; };
+		8D656B5EDB027A143D8384D42BE28212 /* UIViewController+Call.h in Headers */ = {isa = PBXBuildFile; fileRef = A83EF06DA952D803F9489186968E541A /* UIViewController+Call.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5AFB2FFABE7604B26DD6D3DC1ED48C /* Pods-TSTSTransionKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE583DA40B55BDEA2C801C3B75C30E3D /* Pods-TSTSTransionKitDemo-dummy.m */; };
+		90C7A4B4D8773097E535E7BB19FA9FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		94726E5AA345001CB8A956533DD96D9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C3181EB52EF523624469909C0F6FA3AB /* UIViewController+StatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C1D09FFAD17903A5AC7F89FA262F08 /* UIViewController+StatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E643DD861C4ADFC760C9D0122C1D09A3 /* TSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2A0217E2F87FB4DBE5CC36B8E67D81 /* TSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1BA120768F26FD853BF1DA8D5F6008F /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5FD29F0FEEBF87A913139D5E70CFF0 /* UIViewController+Orientation.m */; };
+		FAD45DD194E8D38BA44558A2C7127BCD /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FCEF9707848AEC2C11D33C85F282D /* UINavigationController+Orientation.m */; };
+		FB13ADD8658973CC1CBA98D3F4EBA8CB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A330175D4C55ED2848F08F501789E59 /* UITabBarController+Orientation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FDC2A2E8D20B329B6A598888BBFC228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC04294F31DA440EB7A5F6834BE78BA8;
+			remoteInfo = TS_UIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C572CBBECAE08D434A737117F8AADB /* Pods-TSTSTransionKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTSTransionKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1B2A0217E2F87FB4DBE5CC36B8E67D81 /* TSNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSNavigationController.h; path = Code/TSNavigationController/TSNavigationController.h; sourceTree = "<group>"; };
+		238DD3BA008524CFBC685DA5BC27E161 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247B50A92DD84F31E691C85FB21D0BD5 /* UITabBarController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+Orientation.h"; path = "Code/UIViewController+Orientation/UITabBarController+Orientation.h"; sourceTree = "<group>"; };
+		266691C2E88FFA6E9E9975A25D0800C2 /* Pods-TSTSTransionKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TSTSTransionKitDemo.modulemap"; sourceTree = "<group>"; };
+		2BF971B9B091747D5B56C4C0D5180F11 /* Pods-TSTSTransionKitDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTSTransionKitDemo-resources.sh"; sourceTree = "<group>"; };
+		2EC7C50553C515796F54527342587D7A /* Pods-TSTSTransionKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTSTransionKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3CBCE9643C4158CA0E218C028EF2BEE5 /* Pods-TSTSTransionKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSTSTransionKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4245D8B85C409E1C697F5A94246388C0 /* Pods-TSTSTransionKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTSTransionKitDemo-frameworks.sh"; sourceTree = "<group>"; };
+		541A4152648E05BBE9993438268A6319 /* TS_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TS_UIKit.framework; path = TS_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A330175D4C55ED2848F08F501789E59 /* UITabBarController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+Orientation.m"; path = "Code/UIViewController+Orientation/UITabBarController+Orientation.m"; sourceTree = "<group>"; };
+		61643DF081ED282A53783B49813E880B /* TS_UIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TS_UIKit.modulemap; sourceTree = "<group>"; };
+		67E140483EC266F35ADD6A771526B1E9 /* TS_UIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TS_UIKit-umbrella.h"; sourceTree = "<group>"; };
+		7677E51440E98FA4F6FE47E57827E9BB /* TSBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSBaseViewController.h; path = Code/VC/TSBaseViewController.h; sourceTree = "<group>"; };
+		7C24BB6A021DB0F3F2626C1C0A918283 /* TS_UIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TS_UIKit.xcconfig; sourceTree = "<group>"; };
+		7D46C1B0FEEC52E10421673F04413DC6 /* UIViewController+Call.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Call.m"; path = "Code/UIViewController+Call/UIViewController+Call.m"; sourceTree = "<group>"; };
+		8378EF92A20943918B091A6ED63AAED1 /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+StatusBar.m"; path = "Code/UIViewController+StatusBar/UIViewController+StatusBar.m"; sourceTree = "<group>"; };
+		8C4FCEF9707848AEC2C11D33C85F282D /* UINavigationController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Orientation.m"; path = "Code/UIViewController+Orientation/UINavigationController+Orientation.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D51129AC859DAF4F939150AE4C82C42 /* TSNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSNavigationController.m; path = Code/TSNavigationController/TSNavigationController.m; sourceTree = "<group>"; };
+		9E5FD29F0FEEBF87A913139D5E70CFF0 /* UIViewController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Orientation.m"; path = "Code/UIViewController+Orientation/UIViewController+Orientation.m"; sourceTree = "<group>"; };
+		A83EF06DA952D803F9489186968E541A /* UIViewController+Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Call.h"; path = "Code/UIViewController+Call/UIViewController+Call.h"; sourceTree = "<group>"; };
+		AD4F7D1192F042F4D17E32C60DD3BC47 /* Pods-TSTSTransionKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSTSTransionKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE583DA40B55BDEA2C801C3B75C30E3D /* Pods-TSTSTransionKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSTSTransionKitDemo-dummy.m"; sourceTree = "<group>"; };
+		C03CAE45149FC2BA7BFDFA71493EA50E /* Pods-TSTSTransionKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSTSTransionKitDemo-umbrella.h"; sourceTree = "<group>"; };
+		D3859AF385A9C408E2B8CFF95AE1522F /* Pods_TSTSTransionKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSTSTransionKitDemo.framework; path = "Pods-TSTSTransionKitDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F2C8D134006891A5B3645329FF2B97 /* TSBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSBaseViewController.m; path = Code/VC/TSBaseViewController.m; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9333833899D1F9D5E1AD6495309C9C8 /* UIViewController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Orientation.h"; path = "Code/UIViewController+Orientation/UIViewController+Orientation.h"; sourceTree = "<group>"; };
+		DA0E01AE1A65316CEEB16F9B4B07E1E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C1D09FFAD17903A5AC7F89FA262F08 /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+StatusBar.h"; path = "Code/UIViewController+StatusBar/UIViewController+StatusBar.h"; sourceTree = "<group>"; };
+		F242CD29162BA1390679D948AE5FC76A /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Orientation.h"; path = "Code/UIViewController+Orientation/UINavigationController+Orientation.h"; sourceTree = "<group>"; };
+		F67DE04E95116140BDC341033F591E89 /* TS_UIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TS_UIKit-prefix.pch"; sourceTree = "<group>"; };
+		FEBA57A871E47E8E0A83F129FDB5D052 /* TS_UIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TS_UIKit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56C75DF4D0DAAA5BD9A60D9E6C4C1A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94726E5AA345001CB8A956533DD96D9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE8F9AE14E8BEDB35DB6B600309A2B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C7A4B4D8773097E535E7BB19FA9FB8 /* Foundation.framework in Frameworks */,
+				30BDD390430C88A5E38FF9DC4C8D6EEB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F4D78F20A3BAA0D5FF7C47BE087C509 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				238DD3BA008524CFBC685DA5BC27E161 /* Info.plist */,
+				61643DF081ED282A53783B49813E880B /* TS_UIKit.modulemap */,
+				7C24BB6A021DB0F3F2626C1C0A918283 /* TS_UIKit.xcconfig */,
+				FEBA57A871E47E8E0A83F129FDB5D052 /* TS_UIKit-dummy.m */,
+				F67DE04E95116140BDC341033F591E89 /* TS_UIKit-prefix.pch */,
+				67E140483EC266F35ADD6A771526B1E9 /* TS_UIKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TS_UIKit";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4DF23D4B3D818BA07C544C01E4F8144B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7882627B832DC7757C596137C2C8274 /* TS_UIKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69EA7240DFEAD3E22296890C73C0AB9E /* Pods-TSTSTransionKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA0E01AE1A65316CEEB16F9B4B07E1E7 /* Info.plist */,
+				266691C2E88FFA6E9E9975A25D0800C2 /* Pods-TSTSTransionKitDemo.modulemap */,
+				3CBCE9643C4158CA0E218C028EF2BEE5 /* Pods-TSTSTransionKitDemo-acknowledgements.markdown */,
+				AD4F7D1192F042F4D17E32C60DD3BC47 /* Pods-TSTSTransionKitDemo-acknowledgements.plist */,
+				BE583DA40B55BDEA2C801C3B75C30E3D /* Pods-TSTSTransionKitDemo-dummy.m */,
+				4245D8B85C409E1C697F5A94246388C0 /* Pods-TSTSTransionKitDemo-frameworks.sh */,
+				2BF971B9B091747D5B56C4C0D5180F11 /* Pods-TSTSTransionKitDemo-resources.sh */,
+				C03CAE45149FC2BA7BFDFA71493EA50E /* Pods-TSTSTransionKitDemo-umbrella.h */,
+				05C572CBBECAE08D434A737117F8AADB /* Pods-TSTSTransionKitDemo.debug.xcconfig */,
+				2EC7C50553C515796F54527342587D7A /* Pods-TSTSTransionKitDemo.release.xcconfig */,
+			);
+			name = "Pods-TSTSTransionKitDemo";
+			path = "Target Support Files/Pods-TSTSTransionKitDemo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				4DF23D4B3D818BA07C544C01E4F8144B /* Pods */,
+				F11DDFB801738153E4284D65A61BF1F2 /* Products */,
+				BE437A04D66D38CCA27F6258884A36BD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BE437A04D66D38CCA27F6258884A36BD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69EA7240DFEAD3E22296890C73C0AB9E /* Pods-TSTSTransionKitDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F11DDFB801738153E4284D65A61BF1F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3859AF385A9C408E2B8CFF95AE1522F /* Pods_TSTSTransionKitDemo.framework */,
+				541A4152648E05BBE9993438268A6319 /* TS_UIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7882627B832DC7757C596137C2C8274 /* TS_UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7677E51440E98FA4F6FE47E57827E9BB /* TSBaseViewController.h */,
+				D7F2C8D134006891A5B3645329FF2B97 /* TSBaseViewController.m */,
+				1B2A0217E2F87FB4DBE5CC36B8E67D81 /* TSNavigationController.h */,
+				9D51129AC859DAF4F939150AE4C82C42 /* TSNavigationController.m */,
+				F242CD29162BA1390679D948AE5FC76A /* UINavigationController+Orientation.h */,
+				8C4FCEF9707848AEC2C11D33C85F282D /* UINavigationController+Orientation.m */,
+				247B50A92DD84F31E691C85FB21D0BD5 /* UITabBarController+Orientation.h */,
+				5A330175D4C55ED2848F08F501789E59 /* UITabBarController+Orientation.m */,
+				A83EF06DA952D803F9489186968E541A /* UIViewController+Call.h */,
+				7D46C1B0FEEC52E10421673F04413DC6 /* UIViewController+Call.m */,
+				D9333833899D1F9D5E1AD6495309C9C8 /* UIViewController+Orientation.h */,
+				9E5FD29F0FEEBF87A913139D5E70CFF0 /* UIViewController+Orientation.m */,
+				E6C1D09FFAD17903A5AC7F89FA262F08 /* UIViewController+StatusBar.h */,
+				8378EF92A20943918B091A6ED63AAED1 /* UIViewController+StatusBar.m */,
+				2F4D78F20A3BAA0D5FF7C47BE087C509 /* Support Files */,
+			);
+			name = TS_UIKit;
+			path = TS_UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04AA5AE1BC64530C1419237361A8DCCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2E8FEAFAABC6D5A23A7D91BCB064C9 /* TS_UIKit-umbrella.h in Headers */,
+				7FE4591D04D7077E2A737CE3275FAF88 /* TSBaseViewController.h in Headers */,
+				E643DD861C4ADFC760C9D0122C1D09A3 /* TSNavigationController.h in Headers */,
+				16B47F05F95BDDAAAD125F9C678C2141 /* UINavigationController+Orientation.h in Headers */,
+				052DDF774DE020428A13FCAA83E1F274 /* UITabBarController+Orientation.h in Headers */,
+				8D656B5EDB027A143D8384D42BE28212 /* UIViewController+Call.h in Headers */,
+				5C7447E0F8111A904CB917D063085E55 /* UIViewController+Orientation.h in Headers */,
+				C3181EB52EF523624469909C0F6FA3AB /* UIViewController+StatusBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08D995A294701AB55228E7D250B9254 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CBA817A4FE14C6D01ECD3875754F0D /* Pods-TSTSTransionKitDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E685AF1E948D03257CF0601D43C6310 /* Pods-TSTSTransionKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DECB503938C1276133CE816B10D283F0 /* Build configuration list for PBXNativeTarget "Pods-TSTSTransionKitDemo" */;
+			buildPhases = (
+				D7508705660F7ABC63410EE1E78B25E8 /* Sources */,
+				56C75DF4D0DAAA5BD9A60D9E6C4C1A71 /* Frameworks */,
+				C08D995A294701AB55228E7D250B9254 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7A63B36AA0C8CD7DED0D7C1B9B6528 /* PBXTargetDependency */,
+			);
+			name = "Pods-TSTSTransionKitDemo";
+			productName = "Pods-TSTSTransionKitDemo";
+			productReference = D3859AF385A9C408E2B8CFF95AE1522F /* Pods_TSTSTransionKitDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC04294F31DA440EB7A5F6834BE78BA8 /* TS_UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF814E9A55B5880E170B7C55FEEE6657 /* Build configuration list for PBXNativeTarget "TS_UIKit" */;
+			buildPhases = (
+				99E01A003935AEFE4E5B5748DDAB64E7 /* Sources */,
+				6BE8F9AE14E8BEDB35DB6B600309A2B8 /* Frameworks */,
+				04AA5AE1BC64530C1419237361A8DCCC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TS_UIKit;
+			productName = TS_UIKit;
+			productReference = 541A4152648E05BBE9993438268A6319 /* TS_UIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F11DDFB801738153E4284D65A61BF1F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E685AF1E948D03257CF0601D43C6310 /* Pods-TSTSTransionKitDemo */,
+				EC04294F31DA440EB7A5F6834BE78BA8 /* TS_UIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99E01A003935AEFE4E5B5748DDAB64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435CE4AB477007C4BB7BEDC3137DAF9C /* TS_UIKit-dummy.m in Sources */,
+				10F210C7DAB78731463DFE492540693C /* TSBaseViewController.m in Sources */,
+				702470E16E59AF21E6AF34659647977C /* TSNavigationController.m in Sources */,
+				FAD45DD194E8D38BA44558A2C7127BCD /* UINavigationController+Orientation.m in Sources */,
+				FB13ADD8658973CC1CBA98D3F4EBA8CB /* UITabBarController+Orientation.m in Sources */,
+				8637262FB3F0BB5254D9621D27CD916B /* UIViewController+Call.m in Sources */,
+				F1BA120768F26FD853BF1DA8D5F6008F /* UIViewController+Orientation.m in Sources */,
+				5564E582E8C080D3D5543C5C447ACC92 /* UIViewController+StatusBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7508705660F7ABC63410EE1E78B25E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5AFB2FFABE7604B26DD6D3DC1ED48C /* Pods-TSTSTransionKitDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C7A63B36AA0C8CD7DED0D7C1B9B6528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TS_UIKit;
+			target = EC04294F31DA440EB7A5F6834BE78BA8 /* TS_UIKit */;
+			targetProxy = 0FDC2A2E8D20B329B6A598888BBFC228 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A990767C2AF8161E5D81553EE6D4E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC7C50553C515796F54527342587D7A /* Pods-TSTSTransionKitDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSTSTransionKitDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSTSTransionKitDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BEFDB9A7A0C37D56BCA38CB80D97602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C572CBBECAE08D434A737117F8AADB /* Pods-TSTSTransionKitDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSTSTransionKitDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSTSTransionKitDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46D5C85DDA631620D892DFD757DDB447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24BB6A021DB0F3F2626C1C0A918283 /* TS_UIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TS_UIKit/TS_UIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TS_UIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TS_UIKit/TS_UIKit.modulemap";
+				PRODUCT_NAME = TS_UIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50BF0DA2EBBC1CB924E893EB4D7EDD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24BB6A021DB0F3F2626C1C0A918283 /* TS_UIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TS_UIKit/TS_UIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TS_UIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TS_UIKit/TS_UIKit.modulemap";
+				PRODUCT_NAME = TS_UIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF814E9A55B5880E170B7C55FEEE6657 /* Build configuration list for PBXNativeTarget "TS_UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D5C85DDA631620D892DFD757DDB447 /* Debug */,
+				50BF0DA2EBBC1CB924E893EB4D7EDD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECB503938C1276133CE816B10D283F0 /* Build configuration list for PBXNativeTarget "Pods-TSTSTransionKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEFDB9A7A0C37D56BCA38CB80D97602 /* Debug */,
+				1A990767C2AF8161E5D81553EE6D4E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

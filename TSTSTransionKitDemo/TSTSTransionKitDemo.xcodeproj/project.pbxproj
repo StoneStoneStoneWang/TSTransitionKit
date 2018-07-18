@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938620FEBA6000B0BCBE /* TSBaseTransitionViewController.m */; };
+		6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */; };
+		6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */; };
+		6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A320E5CC1D00E21E41 /* MainViewController.m */; };
+		6CA192A720E773A400E21E41 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A620E773A400E21E41 /* VideoViewController.m */; };
+		6CA192AA20E773CE00E21E41 /* VideoBroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */; };
+		6CA192AD20E773EC00E21E41 /* NoNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */; };
+		6CA192B020E773F800E21E41 /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192AF20E773F800E21E41 /* HasNaviViewController.m */; };
 		6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */; };
 		6CD91B1420DA2C7200DC0F6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1320DA2C7200DC0F6A /* ViewController.m */; };
-		6CD91B1720DA2C7200DC0F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B1520DA2C7200DC0F6A /* Main.storyboard */; };
 		6CD91B1920DA2C7200DC0F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */; };
 		6CD91B1C20DA2C7200DC0F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B1A20DA2C7200DC0F6A /* LaunchScreen.storyboard */; };
 		6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1E20DA2C7200DC0F6A /* main.m */; };
 		6CD91B2920DA2C7300DC0F6A /* TSTSTransionKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B2820DA2C7300DC0F6A /* TSTSTransionKitDemoTests.m */; };
 		6CD91B3420DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B3320DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m */; };
+		6CD91B4320DA310200DC0F6A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B4220DA310200DC0F6A /* Podfile */; };
+		6CD91B4B20DA39E800DC0F6A /* TSAlertTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B4A20DA39E700DC0F6A /* TSAlertTransitionViewController.m */; };
+		6CD91B4E20DA3A2000DC0F6A /* TSAlertPresentTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B4D20DA3A2000DC0F6A /* TSAlertPresentTransitioning.m */; };
+		6CD91B5120DA3A3300DC0F6A /* TSAlertDismissTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B5020DA3A3300DC0F6A /* TSAlertDismissTransitioning.m */; };
+		F551EBCDF57A2DDD93A27764 /* Pods_TSTSTransionKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A3979B3424EBB7777B2703 /* Pods_TSTSTransionKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +47,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0953358EDD5527DFF9DFDD61 /* Pods-TSTSTransionKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSTSTransionKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3F5581C2249DCC243804214C /* Pods-TSTSTransionKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSTSTransionKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C4E938520FEBA6000B0BCBE /* TSBaseTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseTransitionViewController.h; sourceTree = "<group>"; };
+		6C4E938620FEBA6000B0BCBE /* TSBaseTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseTransitionViewController.m; sourceTree = "<group>"; };
+		6C4E938820FF0B8B00B0BCBE /* TSBaseTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseTransition.h; sourceTree = "<group>"; };
+		6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseTransition.m; sourceTree = "<group>"; };
+		6C4E938B20FF103500B0BCBE /* TSBottomUpTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBottomUpTransition.h; sourceTree = "<group>"; };
+		6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBottomUpTransition.m; sourceTree = "<group>"; };
+		6CA192A220E5CC1D00E21E41 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6CA192A320E5CC1D00E21E41 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6CA192A520E773A400E21E41 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		6CA192A620E773A400E21E41 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		6CA192A820E773CE00E21E41 /* VideoBroadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoBroadViewController.h; sourceTree = "<group>"; };
+		6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoBroadViewController.m; sourceTree = "<group>"; };
+		6CA192AB20E773EC00E21E41 /* NoNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoNaviViewController.h; sourceTree = "<group>"; };
+		6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoNaviViewController.m; sourceTree = "<group>"; };
+		6CA192AE20E773F800E21E41 /* HasNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
+		6CA192AF20E773F800E21E41 /* HasNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
 		6CD91B0C20DA2C7200DC0F6A /* TSTSTransionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTSTransionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD91B0F20DA2C7200DC0F6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6CD91B1220DA2C7200DC0F6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6CD91B1320DA2C7200DC0F6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6CD91B1620DA2C7200DC0F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD91B1B20DA2C7200DC0F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD91B1D20DA2C7200DC0F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +80,14 @@
 		6CD91B2F20DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSTSTransionKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD91B3320DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTSTransionKitDemoUITests.m; sourceTree = "<group>"; };
 		6CD91B3520DA2C7300DC0F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD91B4220DA310200DC0F6A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CD91B4920DA39E700DC0F6A /* TSAlertTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAlertTransitionViewController.h; sourceTree = "<group>"; };
+		6CD91B4A20DA39E700DC0F6A /* TSAlertTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAlertTransitionViewController.m; sourceTree = "<group>"; };
+		6CD91B4C20DA3A2000DC0F6A /* TSAlertPresentTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertPresentTransitioning.h; sourceTree = "<group>"; };
+		6CD91B4D20DA3A2000DC0F6A /* TSAlertPresentTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertPresentTransitioning.m; sourceTree = "<group>"; };
+		6CD91B4F20DA3A3300DC0F6A /* TSAlertDismissTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertDismissTransitioning.h; sourceTree = "<group>"; };
+		6CD91B5020DA3A3300DC0F6A /* TSAlertDismissTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertDismissTransitioning.m; sourceTree = "<group>"; };
+		F1A3979B3424EBB7777B2703 /* Pods_TSTSTransionKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSTSTransionKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F551EBCDF57A2DDD93A27764 /* Pods_TSTSTransionKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +116,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4E937E20FEB93500B0BCBE /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E938520FEBA6000B0BCBE /* TSBaseTransitionViewController.h */,
+				6C4E938620FEBA6000B0BCBE /* TSBaseTransitionViewController.m */,
+				6C4E938820FF0B8B00B0BCBE /* TSBaseTransition.h */,
+				6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */,
+				6C4E938B20FF103500B0BCBE /* TSBottomUpTransition.h */,
+				6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
 		6CD91B0320DA2C7200DC0F6A = {
 			isa = PBXGroup;
 			children = (
+				6CD91B4220DA310200DC0F6A /* Podfile */,
 				6CD91B0E20DA2C7200DC0F6A /* TSTSTransionKitDemo */,
 				6CD91B2720DA2C7300DC0F6A /* TSTSTransionKitDemoTests */,
 				6CD91B3220DA2C7300DC0F6A /* TSTSTransionKitDemoUITests */,
 				6CD91B0D20DA2C7200DC0F6A /* Products */,
+				917CC806745B545542CDB3B4 /* Pods */,
+				B0BE490C5DBAB7ABBDCC096D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +155,21 @@
 		6CD91B0E20DA2C7200DC0F6A /* TSTSTransionKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6CD91B4720DA39E700DC0F6A /* Code */,
 				6CD91B0F20DA2C7200DC0F6A /* AppDelegate.h */,
 				6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */,
 				6CD91B1220DA2C7200DC0F6A /* ViewController.h */,
 				6CD91B1320DA2C7200DC0F6A /* ViewController.m */,
-				6CD91B1520DA2C7200DC0F6A /* Main.storyboard */,
+				6CA192AB20E773EC00E21E41 /* NoNaviViewController.h */,
+				6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */,
+				6CA192AE20E773F800E21E41 /* HasNaviViewController.h */,
+				6CA192AF20E773F800E21E41 /* HasNaviViewController.m */,
+				6CA192A820E773CE00E21E41 /* VideoBroadViewController.h */,
+				6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */,
+				6CA192A520E773A400E21E41 /* VideoViewController.h */,
+				6CA192A620E773A400E21E41 /* VideoViewController.m */,
+				6CA192A220E5CC1D00E21E41 /* MainViewController.h */,
+				6CA192A320E5CC1D00E21E41 /* MainViewController.m */,
 				6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */,
 				6CD91B1A20DA2C7200DC0F6A /* LaunchScreen.storyboard */,
 				6CD91B1D20DA2C7200DC0F6A /* Info.plist */,
@@ -132,6 +196,46 @@
 			path = TSTSTransionKitDemoUITests;
 			sourceTree = "<group>";
 		};
+		6CD91B4720DA39E700DC0F6A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E937E20FEB93500B0BCBE /* Present */,
+				6CD91B4820DA39E700DC0F6A /* Alert */,
+			);
+			name = Code;
+			path = ../../Code;
+			sourceTree = "<group>";
+		};
+		6CD91B4820DA39E700DC0F6A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				6CD91B4920DA39E700DC0F6A /* TSAlertTransitionViewController.h */,
+				6CD91B4A20DA39E700DC0F6A /* TSAlertTransitionViewController.m */,
+				6CD91B4C20DA3A2000DC0F6A /* TSAlertPresentTransitioning.h */,
+				6CD91B4D20DA3A2000DC0F6A /* TSAlertPresentTransitioning.m */,
+				6CD91B4F20DA3A3300DC0F6A /* TSAlertDismissTransitioning.h */,
+				6CD91B5020DA3A3300DC0F6A /* TSAlertDismissTransitioning.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		917CC806745B545542CDB3B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F5581C2249DCC243804214C /* Pods-TSTSTransionKitDemo.debug.xcconfig */,
+				0953358EDD5527DFF9DFDD61 /* Pods-TSTSTransionKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0BE490C5DBAB7ABBDCC096D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3979B3424EBB7777B2703 /* Pods_TSTSTransionKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CD91B3820DA2C7300DC0F6A /* Build configuration list for PBXNativeTarget "TSTSTransionKitDemo" */;
 			buildPhases = (
+				E2C6258D83FFAF23D7C00362 /* [CP] Check Pods Manifest.lock */,
 				6CD91B0820DA2C7200DC0F6A /* Sources */,
 				6CD91B0920DA2C7200DC0F6A /* Frameworks */,
 				6CD91B0A20DA2C7200DC0F6A /* Resources */,
+				F421E956AC9B44F047AC1788 /* [CP] Embed Pods Frameworks */,
+				EE23C42D8972C8FD59BD3CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,7 +347,7 @@
 			files = (
 				6CD91B1C20DA2C7200DC0F6A /* LaunchScreen.storyboard in Resources */,
 				6CD91B1920DA2C7200DC0F6A /* Assets.xcassets in Resources */,
-				6CD91B1720DA2C7200DC0F6A /* Main.storyboard in Resources */,
+				6CD91B4320DA310200DC0F6A /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +367,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2C6258D83FFAF23D7C00362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSTSTransionKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE23C42D8972C8FD59BD3CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F421E956AC9B44F047AC1788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TS_UIKit/TS_UIKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TS_UIKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CD91B0820DA2C7200DC0F6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6CD91B1420DA2C7200DC0F6A /* ViewController.m in Sources */,
+				6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */,
+				6CA192A720E773A400E21E41 /* VideoViewController.m in Sources */,
+				6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */,
+				6CA192AA20E773CE00E21E41 /* VideoBroadViewController.m in Sources */,
+				6CD91B5120DA3A3300DC0F6A /* TSAlertDismissTransitioning.m in Sources */,
+				6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */,
+				6CA192AD20E773EC00E21E41 /* NoNaviViewController.m in Sources */,
 				6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */,
+				6CA192B020E773F800E21E41 /* HasNaviViewController.m in Sources */,
+				6CD91B4B20DA39E800DC0F6A /* TSAlertTransitionViewController.m in Sources */,
+				6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */,
+				6CD91B4E20DA3A2000DC0F6A /* TSAlertPresentTransitioning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +475,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6CD91B1520DA2C7200DC0F6A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CD91B1620DA2C7200DC0F6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6CD91B1A20DA2C7200DC0F6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,6 +592,7 @@
 		};
 		6CD91B3920DA2C7300DC0F6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5581C2249DCC243804214C /* Pods-TSTSTransionKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +608,7 @@
 		};
 		6CD91B3A20DA2C7300DC0F6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0953358EDD5527DFF9DFDD61 /* Pods-TSTSTransionKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
