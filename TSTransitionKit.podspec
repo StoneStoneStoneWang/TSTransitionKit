@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSTransitionKit"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "A Lib For Transition."
 s.description  = <<-DESC
 TFKit是一个综合类的Transition工具类。
