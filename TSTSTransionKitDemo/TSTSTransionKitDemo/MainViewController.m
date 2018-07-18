@@ -11,7 +11,7 @@
 
 #import "VideoViewController.h"
 
-#import <TS_UIKit/TSNavigationController.h>
+#import "TSNavigationController.h"
 
 @interface MainViewController ()
 

@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import <TS_UIKit/TSBaseViewController.h>
+#import "TSBaseViewController.h"
 
 @interface TSBaseTransitionViewController : TSBaseViewController <UIViewControllerTransitioningDelegate>
 

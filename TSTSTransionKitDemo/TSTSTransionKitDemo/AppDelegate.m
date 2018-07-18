@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "NoNaviViewController.h"
-#import <TS_UIKit/TSNavigationController.h>
+#import "TSNavigationController.h"
 //#import "TSTransitionNaviController.h"
 @interface AppDelegate ()
 
