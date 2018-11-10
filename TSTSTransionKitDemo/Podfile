@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'TSTSTransionKitDemo' do
 
-pod 'TS_UIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
+pod 'TS_BaseViewController',:git=>'https://github.com/StoneStoneStoneWang/TS_BaseViewController.git'
 
 end

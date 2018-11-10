@@ -23,6 +23,16 @@
 		6CD91B2920DA2C7300DC0F6A /* TSTSTransionKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B2820DA2C7300DC0F6A /* TSTSTransionKitDemoTests.m */; };
 		6CD91B3420DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B3320DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m */; };
 		6CD91B4320DA310200DC0F6A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B4220DA310200DC0F6A /* Podfile */; };
+		6CE779062196D92D004A6C44 /* TSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE779052196D92D004A6C44 /* TSAlertView.m */; };
+		6CEA83A32192F3F000F51F2E /* TSNaviAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */; };
+		6CEA83A42192F3F000F51F2E /* TSBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */; };
+		6CEA83A52192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */; };
+		6CEA83A82192F47100F51F2E /* TSBaseViewController+TS_Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */; };
+		6CEA83AB219320F300F51F2E /* TSNavigationController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83AA219320F300F51F2E /* TSNavigationController+Transition.m */; };
+		6CEA83AD219326DD00F51F2E /* TSConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA83AC219326DD00F51F2E /* TSConfig.plist */; };
+		6CEA83B02193367700F51F2E /* TSNaviBottomUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83AF2193367700F51F2E /* TSNaviBottomUpViewController.m */; };
+		6CEA83B32193379D00F51F2E /* TSAlertTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83B22193379D00F51F2E /* TSAlertTransition.m */; };
+		6CEA83B62193F06C00F51F2E /* TSAlertTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83B52193F06C00F51F2E /* TSAlertTransitionController.m */; };
 		F551EBCDF57A2DDD93A27764 /* Pods_TSTSTransionKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A3979B3424EBB7777B2703 /* Pods_TSTSTransionKitDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +72,7 @@
 		6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoNaviViewController.m; sourceTree = "<group>"; };
 		6CA192AE20E773F800E21E41 /* HasNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
 		6CA192AF20E773F800E21E41 /* HasNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
+		6CB42F872196F7D100F48644 /* TSTransitionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTransitionKit.h; sourceTree = "<group>"; };
 		6CD91B0C20DA2C7200DC0F6A /* TSTSTransionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTSTransionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD91B0F20DA2C7200DC0F6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +89,25 @@
 		6CD91B3320DA2C7300DC0F6A /* TSTSTransionKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTSTransionKitDemoUITests.m; sourceTree = "<group>"; };
 		6CD91B3520DA2C7300DC0F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CD91B4220DA310200DC0F6A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CE779042196D92D004A6C44 /* TSAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertView.h; sourceTree = "<group>"; };
+		6CE779052196D92D004A6C44 /* TSAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertView.m; sourceTree = "<group>"; };
+		6CEA839D2192F3F000F51F2E /* TSBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseAnimation.h; sourceTree = "<group>"; };
+		6CEA839E2192F3F000F51F2E /* TSNaviAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimation.h; sourceTree = "<group>"; };
+		6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimation.m; sourceTree = "<group>"; };
+		6CEA83A02192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
+		6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseAnimation.m; sourceTree = "<group>"; };
+		6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
+		6CEA83A62192F47100F51F2E /* TSBaseViewController+TS_Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSBaseViewController+TS_Transition.h"; sourceTree = "<group>"; };
+		6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TSBaseViewController+TS_Transition.m"; sourceTree = "<group>"; };
+		6CEA83A9219320F300F51F2E /* TSNavigationController+Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSNavigationController+Transition.h"; sourceTree = "<group>"; };
+		6CEA83AA219320F300F51F2E /* TSNavigationController+Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TSNavigationController+Transition.m"; sourceTree = "<group>"; };
+		6CEA83AC219326DD00F51F2E /* TSConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TSConfig.plist; sourceTree = "<group>"; };
+		6CEA83AE2193367700F51F2E /* TSNaviBottomUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNaviBottomUpViewController.h; sourceTree = "<group>"; };
+		6CEA83AF2193367700F51F2E /* TSNaviBottomUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNaviBottomUpViewController.m; sourceTree = "<group>"; };
+		6CEA83B12193379D00F51F2E /* TSAlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertTransition.h; sourceTree = "<group>"; };
+		6CEA83B22193379D00F51F2E /* TSAlertTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertTransition.m; sourceTree = "<group>"; };
+		6CEA83B42193F06C00F51F2E /* TSAlertTransitionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertTransitionController.h; sourceTree = "<group>"; };
+		6CEA83B52193F06C00F51F2E /* TSAlertTransitionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertTransitionController.m; sourceTree = "<group>"; };
 		F1A3979B3424EBB7777B2703 /* Pods_TSTSTransionKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSTSTransionKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +142,8 @@
 			children = (
 				6C4E938520FEBA6000B0BCBE /* TSBaseTransitionViewController.h */,
 				6C4E938620FEBA6000B0BCBE /* TSBaseTransitionViewController.m */,
+				6CEA83AE2193367700F51F2E /* TSNaviBottomUpViewController.h */,
+				6CEA83AF2193367700F51F2E /* TSNaviBottomUpViewController.m */,
 				6C4E938820FF0B8B00B0BCBE /* TSBaseTransition.h */,
 				6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */,
 				6C4E938B20FF103500B0BCBE /* TSBottomUpTransition.h */,
@@ -157,6 +189,7 @@
 				6CA192AF20E773F800E21E41 /* HasNaviViewController.m */,
 				6CA192A820E773CE00E21E41 /* VideoBroadViewController.h */,
 				6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */,
+				6CEA83AC219326DD00F51F2E /* TSConfig.plist */,
 				6CA192A520E773A400E21E41 /* VideoViewController.h */,
 				6CA192A620E773A400E21E41 /* VideoViewController.m */,
 				6CA192A220E5CC1D00E21E41 /* MainViewController.h */,
@@ -190,10 +223,43 @@
 		6CD91B4720DA39E700DC0F6A /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6CB42F872196F7D100F48644 /* TSTransitionKit.h */,
+				6CEA839C2192F31D00F51F2E /* Alert */,
+				6CEA839B2192F31900F51F2E /* Push */,
 				6C4E937E20FEB93500B0BCBE /* Present */,
 			);
 			name = Code;
 			path = ../../Code;
+			sourceTree = "<group>";
+		};
+		6CEA839B2192F31900F51F2E /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				6CEA839D2192F3F000F51F2E /* TSBaseAnimation.h */,
+				6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */,
+				6CEA839E2192F3F000F51F2E /* TSNaviAnimation.h */,
+				6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */,
+				6CEA83A02192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.h */,
+				6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */,
+				6CEA83A62192F47100F51F2E /* TSBaseViewController+TS_Transition.h */,
+				6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */,
+				6CEA83A9219320F300F51F2E /* TSNavigationController+Transition.h */,
+				6CEA83AA219320F300F51F2E /* TSNavigationController+Transition.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		6CEA839C2192F31D00F51F2E /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				6CEA83B12193379D00F51F2E /* TSAlertTransition.h */,
+				6CEA83B22193379D00F51F2E /* TSAlertTransition.m */,
+				6CEA83B42193F06C00F51F2E /* TSAlertTransitionController.h */,
+				6CEA83B52193F06C00F51F2E /* TSAlertTransitionController.m */,
+				6CE779042196D92D004A6C44 /* TSAlertView.h */,
+				6CE779052196D92D004A6C44 /* TSAlertView.m */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		917CC806745B545542CDB3B4 /* Pods */ = {
@@ -225,7 +291,6 @@
 				6CD91B0920DA2C7200DC0F6A /* Frameworks */,
 				6CD91B0A20DA2C7200DC0F6A /* Resources */,
 				F421E956AC9B44F047AC1788 /* [CP] Embed Pods Frameworks */,
-				EE23C42D8972C8FD59BD3CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CD91B1C20DA2C7200DC0F6A /* LaunchScreen.storyboard in Resources */,
+				6CEA83AD219326DD00F51F2E /* TSConfig.plist in Resources */,
 				6CD91B1920DA2C7200DC0F6A /* Assets.xcassets in Resources */,
 				6CD91B4320DA310200DC0F6A /* Podfile in Resources */,
 			);
@@ -363,21 +429,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE23C42D8972C8FD59BD3CCF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F421E956AC9B44F047AC1788 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,16 +437,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSTSTransionKitDemo/Pods-TSTSTransionKitDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/TS_UIKit/TS_UIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TS_BaseViewController/TS_BaseViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/TS_ToolKit/TS_ToolKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXTAlertManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TS_UIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TS_BaseViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TS_ToolKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -412,14 +461,23 @@
 				6CD91B1420DA2C7200DC0F6A /* ViewController.m in Sources */,
 				6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */,
+				6CEA83A52192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6CA192A720E773A400E21E41 /* VideoViewController.m in Sources */,
 				6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */,
+				6CEA83A42192F3F000F51F2E /* TSBaseAnimation.m in Sources */,
+				6CEA83AB219320F300F51F2E /* TSNavigationController+Transition.m in Sources */,
 				6CA192AA20E773CE00E21E41 /* VideoBroadViewController.m in Sources */,
+				6CEA83B02193367700F51F2E /* TSNaviBottomUpViewController.m in Sources */,
+				6CE779062196D92D004A6C44 /* TSAlertView.m in Sources */,
 				6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */,
 				6CA192AD20E773EC00E21E41 /* NoNaviViewController.m in Sources */,
+				6CEA83B32193379D00F51F2E /* TSAlertTransition.m in Sources */,
 				6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */,
+				6CEA83B62193F06C00F51F2E /* TSAlertTransitionController.m in Sources */,
+				6CEA83A32192F3F000F51F2E /* TSNaviAnimation.m in Sources */,
 				6CA192B020E773F800E21E41 /* HasNaviViewController.m in Sources */,
 				6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */,
+				6CEA83A82192F47100F51F2E /* TSBaseViewController+TS_Transition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

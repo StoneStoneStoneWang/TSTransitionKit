@@ -8,7 +8,22 @@
 
 #import "TSBottomUpTransition.h"
 #define COVER_TAG 9999
+
+@interface TSBottomUpTransition()
+
+@end
 @implementation TSBottomUpTransition
+
+- (instancetype)initWithType:(TSControllerTransitionType)transitionType Duration:(NSTimeInterval)duration {
+    
+    if (self = [super initWithType:transitionType Duration:duration]) {
+        
+        CGFloat h = CGRectGetHeight([UIScreen mainScreen].bounds);
+        
+        self.transitionY = h / 2;
+    }
+    return self;
+}
 
 - (void)present:(id<UIViewControllerContextTransitioning>)transitionContext {
     
@@ -55,11 +70,10 @@
     CGFloat w = CGRectGetWidth([UIScreen mainScreen].bounds);
     
     toView.frame = CGRectMake(0, h, w, h);
-
     
     [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:1 initialSpringVelocity:1.0f / 0.55f options:UIViewAnimationOptionCurveLinear animations:^{
         
-        toView.transform = CGAffineTransformMakeTranslation(0, -h/2);
+        toView.transform = CGAffineTransformMakeTranslation(0, -self.transitionY);
         
         temp.transform = CGAffineTransformMakeScale(0.8, 0.8);
         
@@ -106,8 +120,12 @@
         [temp removeFromSuperview];
     }];
 }
+
 - (void)onCoverClick {
     
+    id<TSBottomUpTransitionDelegate> delegate = (id<TSBottomUpTransitionDelegate>)self.mDelegate;
     
+    [delegate onCoverClick];
 }
+
 @end

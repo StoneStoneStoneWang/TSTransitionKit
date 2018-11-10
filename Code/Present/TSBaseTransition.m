@@ -12,6 +12,7 @@
 @property (nonatomic , assign, readwrite) TSControllerTransitionType transitionType;
 
 @property(nonatomic, assign) NSTimeInterval duration;
+
 @end
 
 @implementation TSBaseTransition
@@ -44,7 +45,23 @@
 
 - (void)dismiss:(id<UIViewControllerContextTransitioning>)transitionContext {}
 
-- (void)presentEnd {}
+- (void)presentEnd {
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(presentEnd)]) {
+        
+        [_mDelegate presentEnd];
+    }
+}
 
-- (void)dismissEnded {}
+- (void)dismissEnded {
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(dismissEnded)]) {
+        
+        [_mDelegate dismissEnded];
+    }
+}
+
+- (void)setMdelegate:(id<TSBaseTransitionDelegate>)mDelegate {
+    self.mDelegate = mDelegate;
+}
 @end

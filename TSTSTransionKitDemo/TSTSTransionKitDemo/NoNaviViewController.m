@@ -8,10 +8,10 @@
 
 #import "NoNaviViewController.h"
 #import "HasNaviViewController.h"
-@interface NoNaviViewController ()
-
-@end
-
+#import "TSNaviBottomUpViewController.h"
+#import "TSAlertTransitionController.h"
+#import "TSAlertView.h"
+#import "AppDelegate.h"
 @implementation NoNaviViewController
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -47,9 +47,17 @@
 
 - (void)gotoHasNavi {
 
-    HasNaviViewController *has = [HasNaviViewController new];
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
-    [self presentViewController:has animated:true completion:nil];
+    [TSAlertView ts_showFromSuper:delegate.window];
+    
+//    TSAlertTransitionController *has = [TSAlertTransitionController alertTransition];
+//
+////    [self.navigationController pushViewController:has animated:true];
+//
+////    TSNaviBottomUpViewController *navi = [[TSNaviBottomUpViewController alloc] initWithRootViewController:has];
+//
+//    [self presentViewController:has animated:true completion:nil];
 }
 
 @end

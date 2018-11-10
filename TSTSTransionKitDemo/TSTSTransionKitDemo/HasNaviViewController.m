@@ -8,6 +8,9 @@
 
 #import "HasNaviViewController.h"
 #import "TSBottomUpTransition.h"
+#import "TSNavigationController+Transition.h"
+#import "TSAlertTransition.h"
+
 @interface HasNaviViewController ()
 
 @end
@@ -17,7 +20,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:false];
+//    [self.navigationController setNavigationBarHidden:false];
 }
 - (void)configOwnSubviews {
     
@@ -58,6 +61,7 @@
 }
 - (void)goBack {
     
+//    [self.navigationController popViewControllerAnimated:true];
     [self dismissViewControllerAnimated:true completion:nil];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -65,12 +69,23 @@
     return UIStatusBarStyleDefault;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.transitioningDelegate = self;
+}
+
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     
-    return [[TSBottomUpTransition alloc] initWithType:(TSControllerTransitionTypeDismiss) Duration:0.3];
+    return [[TSAlertTransition alloc] initWithType:(TSControllerTransitionTypeDismiss) Duration:0.3];
 }
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     
-    return [[TSBottomUpTransition alloc] initWithType:(TSControllerTransitionTypePresent) Duration:0.5];
+    TSAlertTransition *tr = [[TSAlertTransition alloc] initWithType:(TSControllerTransitionTypePresent) Duration:0.3];
+    
+    //    tr.
+    
+    return tr;
 }
+
 @end

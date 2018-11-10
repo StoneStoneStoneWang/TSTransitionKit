@@ -7,8 +7,10 @@
 //
 
 #import "TSBaseTransitionViewController.h"
-#import "TSBaseTransition.h"
-@interface TSBaseTransitionViewController ()
+
+@interface TSBaseTransitionViewController () <TSBaseTransitionDelegate>
+
+@property (nonatomic ,copy) DismissCompletion dis;
 
 @end
 
@@ -26,10 +28,37 @@
 // 子类继承 重写这两个函数
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     
-    return [[TSBaseTransition alloc] initWithType:(TSControllerTransitionTypeDismiss) Duration:0.3];
+    TSBaseTransition *tr = [[TSBaseTransition alloc] initWithType:(TSControllerTransitionTypeDismiss) Duration:0.3];
+    
+    tr.mDelegate = self;
+    
+    return tr;
 }
+
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     
-    return [[TSBaseTransition alloc] initWithType:(TSControllerTransitionTypePresent) Duration:0.5];
+    TSBaseTransition *tr = [[TSBaseTransition alloc] initWithType:(TSControllerTransitionTypePresent) Duration:0.5];
+    
+    tr.mDelegate = self;
+    
+    return tr;
 }
+
+- (void)presentEnd {
+    
+    
+}
+- (void)dismissEnded {
+    
+    if (self.dis) {
+        
+        self.dis();
+    }
+}
+
+- (void)setDimissBlock:(DismissCompletion)dismiss {
+    
+    self.dis = dismiss;
+}
+
 @end

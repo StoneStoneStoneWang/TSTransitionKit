@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TSBaseViewController.h"
+#import "TSBaseTransition.h"
 
 @interface TSBaseTransitionViewController : TSBaseViewController <UIViewControllerTransitioningDelegate>
+
+// 消失的时候可能需要用到
+- (void)setDimissBlock:(DismissCompletion )dismiss;
 
 @end

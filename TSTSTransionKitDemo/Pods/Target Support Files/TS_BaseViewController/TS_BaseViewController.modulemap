@@ -1,0 +1,6 @@
+framework module TS_BaseViewController {
+  umbrella header "TS_BaseViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

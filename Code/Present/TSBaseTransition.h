@@ -14,6 +14,18 @@ typedef NS_ENUM(NSInteger, TSControllerTransitionType) {
     TSControllerTransitionTypePresent,
     TSControllerTransitionTypeDismiss
 };
+
+@protocol TSBaseTransitionDelegate <NSObject>
+
+@optional
+- (void)presentEnd;
+
+- (void)dismissEnded;
+
+@end
+
+typedef void(^DismissCompletion)(void);
+
 @interface TSBaseTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic , assign, readonly) TSControllerTransitionType transitionType;
@@ -25,6 +37,10 @@ typedef NS_ENUM(NSInteger, TSControllerTransitionType) {
  */
 - (instancetype)initWithType:(TSControllerTransitionType) transitionType
                     Duration:(NSTimeInterval)duration;
+
+@property (nonatomic ,weak) id<TSBaseTransitionDelegate> mDelegate;
+
+- (void)setMdelegate:(id <TSBaseTransitionDelegate>)mDelegate;
 
 #pragma mark - push pop方法，具体交给子类实现
 - (void)present:(id<UIViewControllerContextTransitioning>)transitionContext;

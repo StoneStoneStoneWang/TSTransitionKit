@@ -1,6 +1,0 @@
-framework module TS_UIKit {
-  umbrella header "TS_UIKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TSBaseViewController.h"
+#import "TSBaseViewController+TS_Transition.h"
+#import "TSNavigationController+Transition.h"
 @interface NoNaviViewController : TSBaseViewController
+
 
 @end

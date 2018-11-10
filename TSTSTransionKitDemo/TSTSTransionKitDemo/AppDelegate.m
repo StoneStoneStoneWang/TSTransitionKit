@@ -10,7 +10,7 @@
 #import "MainViewController.h"
 #import "NoNaviViewController.h"
 #import "TSNavigationController.h"
-//#import "TSTransitionNaviController.h"
+#import "TSNavigationController+Transition.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +23,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController =  [[TSNavigationController alloc] initWithRootViewController:[NoNaviViewController new]];
+//    self.window.rootViewController =  [[TSNavigationController alloc] initWithRootViewController:[NoNaviViewController new]];
+    
+    self.window.rootViewController = [MainViewController new];
     
     [self.window makeKeyAndVisible];
     

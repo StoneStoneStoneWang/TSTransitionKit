@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSBaseViewController+TS_Transition.h"
 #import "TSBaseTransitionViewController.h"
 @interface HasNaviViewController : TSBaseTransitionViewController
+
 
 @end
 

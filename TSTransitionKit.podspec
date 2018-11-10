@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSTransitionKit"
-s.version      = "1.0.4"
+s.version      = "1.0.5"
 s.summary      = "A Lib For Transition."
 s.description  = <<-DESC
-TFKit是一个综合类的Transition工具类。
+TSTransitionKit是一个综合类的Transition工具类。
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/TSTransitionKit"

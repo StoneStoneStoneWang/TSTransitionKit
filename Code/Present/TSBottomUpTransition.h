@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "TSBaseTransition.h"
+@protocol TSBottomUpTransitionDelegate <TSBaseTransitionDelegate>
+
+- (void)onCoverClick;
+
+@end
 
 @interface TSBottomUpTransition : TSBaseTransition
+
+@property (nonatomic ,assign) CGFloat transitionY;
 
 @end
