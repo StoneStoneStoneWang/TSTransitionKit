@@ -14,6 +14,8 @@
 
 @property (nonatomic ,copy) DismissCompletion dis;
 
+// 返回 在跳转延迟
+
 @property (nonatomic ,assign) CGFloat delayTime;
 
 // 消失的时候可能需要用到
