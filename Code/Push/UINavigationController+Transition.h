@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSNavigationController (Transition) <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
-
+@interface UINavigationController (Transition) <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 
 @end

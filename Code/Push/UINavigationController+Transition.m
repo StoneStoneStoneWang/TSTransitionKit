@@ -6,38 +6,38 @@
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
 #import "TSNaviAnimation.h"
 #import "TSBaseViewController+TS_Transition.h"
-@implementation TSNavigationController (Transition)
+@implementation UINavigationController (Transition)
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                                    interactionControllerForAnimationController:(TSBaseAnimation *) animationController
 {
-    return animationController.interactivePopTransition;
+    return animationController.ts_interactivePopTransition;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
-                                                         fromViewController:(TSBaseViewController *)fromVC
+                                                         fromViewController:(id <TSViewControllerPushAnimationDelegate>)fromVC
                                                            toViewController:(UIViewController *)toVC
 {
     
-    if (fromVC.interactivePopTransition != nil)
+    if (fromVC.ts_interactivePopTransition != nil)
     {
-        TSNaviAnimation *animation = [[TSNaviAnimation alloc] initWithType:operation Duration:0.5];
+        TSNaviAnimation *animation = [[TSNaviAnimation alloc] initWithType:operation Duration:0.3];
         
-        animation.interactivePopTransition = fromVC.interactivePopTransition;
+        animation.ts_interactivePopTransition = fromVC.ts_interactivePopTransition;
         
-        [animation setMDelegate:fromVC];
+        [animation setDelegate:(UIViewController *)fromVC];
         
         return animation; //手势
     }
     else
     {
-        TSNaviAnimation *animation = [[TSNaviAnimation alloc]initWithType:operation Duration:0.5];
+        TSNaviAnimation *animation = [[TSNaviAnimation alloc]initWithType:operation Duration:0.6];
         
-        [animation setMDelegate:fromVC];
+        [animation setDelegate:(UIViewController *)fromVC];
         
         return animation;//非手势
     }

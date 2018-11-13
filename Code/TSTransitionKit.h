@@ -15,7 +15,9 @@
 
 #import "TSBaseViewController+TS_Transition.h"
 
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
+
+#import "TSNaviAnimationManager.h"
 
 // present
 

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TSBaseViewController+TS_Transition.h"
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
 @interface NoNaviViewController : TSBaseViewController
 
+- (void)gotoHasNavi;
 
 @end

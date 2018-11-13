@@ -10,7 +10,7 @@
 #import "MainViewController.h"
 #import "NoNaviViewController.h"
 #import "TSNavigationController.h"
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
 @interface AppDelegate ()
 
 @end

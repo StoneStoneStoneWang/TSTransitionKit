@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSTransitionKit"
-s.version      = "1.0.5"
+s.version      = "1.0.6"
 s.summary      = "A Lib For Transition."
 s.description  = <<-DESC
 TSTransitionKit是一个综合类的Transition工具类。
@@ -21,6 +21,8 @@ s.frameworks = 'UIKit', 'Foundation'
 s.source = { :git => "https://github.com/StoneStoneStoneWang/TSTransitionKit.git", :tag => "#{s.version}" }
 
 s.source_files = "Code/**/*.{h,m}"
+
+s.dependency 'TS_BaseViewController'
 
 end
 

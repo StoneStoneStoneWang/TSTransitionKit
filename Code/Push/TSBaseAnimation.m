@@ -14,6 +14,10 @@
 
 @property(nonatomic, assign, readwrite) UINavigationControllerOperation transitionType;
 
+@property(nonatomic ,strong ,readwrite) id<UIViewControllerContextTransitioning> transitionContext;
+
+@property (nonatomic ,weak) id<TSBaseAnimationDelegate> mDelegate;
+
 @end
 @implementation TSBaseAnimation
 
@@ -28,6 +32,10 @@
     return self;
 }
 
+- (void)setDelegate:(id<TSBaseAnimationDelegate>)mDelegate {
+    
+    self.mDelegate = mDelegate;
+}
 - (void)push:(id<UIViewControllerContextTransitioning>)transitionContext{}
 - (void)pop:(id<UIViewControllerContextTransitioning>)transitionContext{}
 
@@ -65,7 +73,19 @@
 
 - (void)animationEnded:(BOOL)transitionCompleted {
     
-    if (!transitionCompleted) { return;}
+    if (!transitionCompleted) {
+        
+        if (self.transitionType == UINavigationControllerOperationPush) {
+            
+            [self pushCancled];
+            
+        } else if (self.transitionType == UINavigationControllerOperationPop) {
+            
+            [self popCancled];
+        }
+        
+        return;
+    }
     
     if (self.transitionType == UINavigationControllerOperationPush) {
         
@@ -74,6 +94,21 @@
     } else if (self.transitionType == UINavigationControllerOperationPop) {
         
         [self popEnded];
+    }
+}
+- (void)popCancled {
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(popCancled)]) {
+        
+        [_mDelegate popCancled];
+    }
+}
+
+- (void)pushCancled {
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(pushCancled)]) {
+        
+        [_mDelegate pushCancled];
     }
 }
 

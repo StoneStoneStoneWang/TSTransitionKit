@@ -16,13 +16,20 @@
 
 - (void)popEnded;
 
+- (void)pushCancled;
+
+- (void)popCancled;
+
 @end
 
+// push pop的用到了 from 和 to两个vc 还有就是 navivc  还有就是container 不管怎么操作 最终都是to的view 添加到container容器中 只是有一些动画效果 以及体验
 @interface TSBaseAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 // push or pop
 @property(nonatomic,assign,readonly) UINavigationControllerOperation transitionType;
 
-@property(nonatomic,strong,readwrite) UIPercentDrivenInteractiveTransition *interactivePopTransition;
+@property(nonatomic,strong,readwrite) UIPercentDrivenInteractiveTransition *ts_interactivePopTransition;
+
+@property(nonatomic ,strong ,readonly) id<UIViewControllerContextTransitioning> transitionContext;
 
 /**
  *  主要构造方法
@@ -32,16 +39,7 @@
 - (instancetype)initWithType:(UINavigationControllerOperation)transitionType
                     Duration:(NSTimeInterval)duration;
 
-/**
- *  主要构造方法
- *  @param  transitionType      动画类型 push or pop
- *  @param  duration            间隔时间
- *  @param
- */
-
-@property (nonatomic ,weak) id<TSBaseAnimationDelegate> mDelegate;
-
-- (void)setMdelegate:(id <TSBaseAnimationDelegate>)mDelegate;
+- (void)setDelegate:(id <TSBaseAnimationDelegate>)mDelegate;
 
 #pragma mark - push pop方法，具体交给子类实现
 - (void)push:(id<UIViewControllerContextTransitioning>)transitionContext;
@@ -65,5 +63,8 @@
 
 - (void)popEnded;
 
+- (void)pushCancled;
+
+- (void)popCancled;
 
 @end

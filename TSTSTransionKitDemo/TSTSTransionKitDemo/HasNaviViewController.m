@@ -8,9 +8,9 @@
 
 #import "HasNaviViewController.h"
 #import "TSBottomUpTransition.h"
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
 #import "TSAlertTransition.h"
-
+#import "AAAAAViewController.h"
 @interface HasNaviViewController ()
 
 @end
@@ -20,7 +20,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-//    [self.navigationController setNavigationBarHidden:false];
+    [self.navigationController setNavigationBarHidden:false];
+    
+    self.title = @"有导航";
 }
 - (void)configOwnSubviews {
     
@@ -46,23 +48,27 @@
     
     [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     
+    [btn1 setTitle:@"跳转" forState:UIControlStateHighlighted];
+    
+    [btn1 setTitleColor:[UIColor yellowColor] forState:UIControlStateHighlighted];
+    
     [self.view addSubview:btn1];
 }
 - (void)goPush {
     
-    HasNaviViewController *has = [HasNaviViewController new];
+     AAAAAViewController *has = [AAAAAViewController new];
     
     [self.navigationController pushViewController:has animated:true];
 }
 - (void)configOwnProperties {
     [super configOwnProperties];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor greenColor];
 }
 - (void)goBack {
     
-//    [self.navigationController popViewControllerAnimated:true];
-    [self dismissViewControllerAnimated:true completion:nil];
+    [self.navigationController popViewControllerAnimated:true];
+//    [self dismissViewControllerAnimated:true completion:nil];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
     
@@ -83,9 +89,20 @@
     
     TSAlertTransition *tr = [[TSAlertTransition alloc] initWithType:(TSControllerTransitionTypePresent) Duration:0.3];
     
-    //    tr.
-    
     return tr;
+}
+
+- (BOOL)ts_prefersNavigationBarHidden {
+    
+    return false;
+}
+- (BOOL)ts_prefersStatusBarHidden {
+    
+    return false;
+}
+- (BOOL)ts_prefersTabbarHidden {
+    
+    return true;
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "TSBaseViewController+TS_Transition.h"
+#import "TSNavigationController.h"
+#import "UIColor+ColorTool.h"
 #import <objc/runtime.h>
 // 利用Category 和Runtime实行方法hook hook方案有一个好处,就是可以避免代码入侵,做到更加广泛的通用性.通过swizzling我们可以将原method与自己加入的method相结合,即不需要在原有工程中加入代码,又能做到全局覆盖
 
@@ -31,15 +33,27 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 }
 #define TS_PanResponseW 100
 
+@implementation UIViewController (AnimationDelegate)
+
+- (void)pushEnded {}
+
+- (void)pushCancled {}
+
+- (void)popEnded {}
+
+- (void)popCancled {}
+@end
+
 @implementation TSBaseViewController (TS_Transition)
 
-- (void)setInteractivePopTransition:(UIPercentDrivenInteractiveTransition *)interactivePopTransition {
+- (void)setTs_interactivePopTransition:(UIPercentDrivenInteractiveTransition *)ts_interactivePopTransition {
     
-    objc_setAssociatedObject(self, @"interactivePopTransition", interactivePopTransition, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @"ts_interactivePopTransition", ts_interactivePopTransition, OBJC_ASSOCIATION_RETAIN);
 }
-- (UIPercentDrivenInteractiveTransition *)interactivePopTransition {
+
+- (UIPercentDrivenInteractiveTransition *)ts_interactivePopTransition {
     
-    return objc_getAssociatedObject(self, @"interactivePopTransition");
+    return objc_getAssociatedObject(self, @"ts_interactivePopTransition");
 }
 
 + (void)load {
@@ -66,12 +80,12 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     
     //由于方法已经被交换,这里调用的实际上是viewDidLoad方法
     
-    if ([self isAddPan]) {
+    if ([self isAddPopPan]) {
         
-        [self addPanGesture];
+        [self addPopPanGesture];
     }
 }
-- (void)addPanGesture {
+- (void)addPopPanGesture {
     
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
     {
@@ -82,7 +96,7 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
         popRecognizer.delegate = self;
     }
 }
-- (BOOL)isAddPan {
+- (BOOL)isAddPopPan {
     
     return true;
 }
@@ -96,25 +110,25 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     //    NSLog(@"progress---%.2f",progress);
     if (recognizer.state == UIGestureRecognizerStateBegan)
     {
-        self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc]init];
+        self.ts_interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc]init];
         
         [self.navigationController popViewControllerAnimated:YES];
     }
     else if (recognizer.state == UIGestureRecognizerStateChanged)
     {
-        [self.interactivePopTransition updateInteractiveTransition:progress];
+        [self.ts_interactivePopTransition updateInteractiveTransition:progress];
     }
     else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled)
     {
         if (progress > 0.25)
         {
-            [self.interactivePopTransition finishInteractiveTransition];
+            [self.ts_interactivePopTransition finishInteractiveTransition];
         }
         else
         {
-            [self.interactivePopTransition cancelInteractiveTransition];
+            [self.ts_interactivePopTransition cancelInteractiveTransition];
         }
-        self.interactivePopTransition = nil;
+        self.ts_interactivePopTransition = nil;
     }
 }
 
@@ -133,7 +147,7 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
         }
         case TSPanResponseTypeCustom:
         {
-            BOOL result = [gestureRecognizer velocityInView:self.view].x > 0 && [gestureRecognizer locationInView:self.view].x < self.panResponseW;
+            BOOL result = [gestureRecognizer velocityInView:self.view].x > 0 && [gestureRecognizer locationInView:self.view].x < self.popPanResponseW;
             
             return result;
         }
@@ -146,17 +160,40 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     }
 }
 
-- (CGFloat)panResponseW {
+- (CGFloat)popPanResponseW {
     
     return TS_PanResponseW;
 }
-- (void)popEnded {
+// 我这只是给一个初始状态 
+- (BOOL)ts_prefersNavigationBarHidden {
     
-    NSLog(@"popEnded");
+    return false;
 }
-- (void)pushEnded {
+- (BOOL)ts_prefersTabbarHidden {
     
-    NSLog(@"pushEnded");
+    return true;
+}
+- (BOOL)ts_prefersStatusBarHidden {
+    
+    return false;
 }
 
+- (NSInteger)ts_naviChildViewControllersCount {
+    
+    return self.navigationController.childViewControllers.count;
+}
+- (UITabBarController *)get_Ts_tabbarController {
+    
+    return self.tabBarController;
+}
+
+- (TSNavigationController *)get_Ts_naviController {
+    
+    return (TSNavigationController *)self.navigationController;
+}
+
+- (UIView *)get_Ts_childView {
+    
+    return self.view;
+}
 @end

@@ -12,7 +12,7 @@
 #import "VideoViewController.h"
 
 #import "TSNavigationController.h"
-#import "TSNavigationController+Transition.h"
+#import "UINavigationController+Transition.h"
 
 #import "TSAlertTransitionController.h"
 @interface MainViewController ()
@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    VideoViewController *video = [VideoViewController new];
+    NoNaviViewController *video = [NoNaviViewController new];
     
     video.title = @"视频";
     
