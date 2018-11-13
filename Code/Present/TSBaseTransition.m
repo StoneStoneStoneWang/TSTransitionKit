@@ -41,9 +41,26 @@
         [self dismiss:transitionContext];
     }
 }
+
 - (void)present:(id<UIViewControllerContextTransitioning>)transitionContext {}
 
 - (void)dismiss:(id<UIViewControllerContextTransitioning>)transitionContext {}
+
+- (void)animationEnded:(BOOL)transitionCompleted {
+    
+    if (!transitionCompleted) {
+        
+        return;
+    }
+    
+    if (self.transitionType == TSControllerTransitionTypePresent) {
+        
+        [self presentEnd];
+    } else if (self.transitionType == TSControllerTransitionTypeDismiss) {
+        
+        [self dismissEnded];
+    }
+}
 
 - (void)presentEnd {
     

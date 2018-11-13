@@ -8,9 +8,7 @@
 
 #import "TSBaseTransitionViewController.h"
 
-@interface TSBaseTransitionViewController () <TSBaseTransitionDelegate>
-
-@property (nonatomic ,copy) DismissCompletion dis;
+@interface TSBaseTransitionViewController ()
 
 @end
 
@@ -52,13 +50,13 @@
     
     if (self.dis) {
         
-        self.dis();
+        [self performSelector:@selector(setDimissBlock:) withObject:self.dis afterDelay:self.delayTime];
     }
 }
 
 - (void)setDimissBlock:(DismissCompletion)dismiss {
     
-    self.dis = dismiss;
+    dismiss();
 }
 
 @end

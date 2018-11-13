@@ -10,9 +10,13 @@
 #import "TSBaseViewController.h"
 #import "TSBaseTransition.h"
 
-@interface TSBaseTransitionViewController : TSBaseViewController <UIViewControllerTransitioningDelegate>
+@interface TSBaseTransitionViewController : TSBaseViewController <UIViewControllerTransitioningDelegate ,TSBaseTransitionDelegate>
+
+@property (nonatomic ,copy) DismissCompletion dis;
+
+@property (nonatomic ,assign) CGFloat delayTime;
 
 // 消失的时候可能需要用到
-- (void)setDimissBlock:(DismissCompletion )dismiss;
+//- (void)setDimissBlock:(DismissCompletion )dismiss;
 
 @end

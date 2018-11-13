@@ -7,14 +7,10 @@
 //
 
 #import "MainViewController.h"
-#import "NoNaviViewController.h"
+#import "TSMeViewController.h"
+#import "TSHomeViewController.h"
+#import "TSTransitionKit.h"
 
-#import "VideoViewController.h"
-
-#import "TSNavigationController.h"
-#import "UINavigationController+Transition.h"
-
-#import "TSAlertTransitionController.h"
 @interface MainViewController ()
 
 @end
@@ -25,29 +21,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NoNaviViewController *video = [NoNaviViewController new];
+        TSHomeViewController *video = [TSHomeViewController new];
     
-    video.title = @"视频";
+        video.title = @"首页";
     
-    video.tabBarItem.title = @"视频";
+        video.tabBarItem.title = @"首页";
     
-    TSNavigationController *navi1 = [[TSNavigationController alloc]initWithRootViewController:video];
+        TSNavigationController *navi1 = [[TSNavigationController alloc]initWithRootViewController:video];
     
-    [self addChildViewController:navi1];
+        [self addChildViewController:navi1];
     
-    NoNaviViewController *me = [NoNaviViewController new];
+        TSMeViewController *me = [TSMeViewController new];
     
-    me.title = @"我的";
+        me.title = @"我的";
     
-    me.tabBarItem.title = @"我的";
+        me.tabBarItem.title = @"我的";
     
-    TSNavigationController *navi2 = [[TSNavigationController alloc]initWithRootViewController:me];
+        TSNavigationController *navi2 = [[TSNavigationController alloc]initWithRootViewController:me];
     
-    [self addChildViewController:navi2];
+        [self addChildViewController:navi2];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
     
     
 }

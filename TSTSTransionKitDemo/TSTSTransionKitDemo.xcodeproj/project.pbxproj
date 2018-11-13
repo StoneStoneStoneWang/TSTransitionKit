@@ -11,14 +11,14 @@
 		6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */; };
 		6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */; };
 		6C7EBC36219909FB00B093BA /* TSNaviAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC35219909FB00B093BA /* TSNaviAnimationManager.m */; };
-		6C7EBC39219925C300B093BA /* AAAAAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC38219925C300B093BA /* AAAAAViewController.m */; };
+		6C7EBC3C219AC69E00B093BA /* TSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */; };
+		6C7EBC3F219AC6B800B093BA /* TSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC3E219AC6B800B093BA /* TSHomeViewController.m */; };
+		6C7EBC42219AE0D700B093BA /* TSUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC41219AE0D700B093BA /* TSUserInfoViewController.m */; };
+		6C7EBC45219AE3DC00B093BA /* TSAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC44219AE3DC00B093BA /* TSAlertDemoViewController.m */; };
+		6C7EBC48219AE6C200B093BA /* TSBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC47219AE6C200B093BA /* TSBottomViewController.m */; };
+		6C7EBC4B219AEC9700B093BA /* TSOrderConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC4A219AEC9700B093BA /* TSOrderConfirmViewController.m */; };
 		6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A320E5CC1D00E21E41 /* MainViewController.m */; };
-		6CA192A720E773A400E21E41 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A620E773A400E21E41 /* VideoViewController.m */; };
-		6CA192AA20E773CE00E21E41 /* VideoBroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */; };
-		6CA192AD20E773EC00E21E41 /* NoNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */; };
-		6CA192B020E773F800E21E41 /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA192AF20E773F800E21E41 /* HasNaviViewController.m */; };
 		6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */; };
-		6CD91B1420DA2C7200DC0F6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1320DA2C7200DC0F6A /* ViewController.m */; };
 		6CD91B1920DA2C7200DC0F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */; };
 		6CD91B1C20DA2C7200DC0F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD91B1A20DA2C7200DC0F6A /* LaunchScreen.storyboard */; };
 		6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD91B1E20DA2C7200DC0F6A /* main.m */; };
@@ -66,24 +66,24 @@
 		6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBottomUpTransition.m; sourceTree = "<group>"; };
 		6C7EBC34219909FB00B093BA /* TSNaviAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimationManager.h; sourceTree = "<group>"; };
 		6C7EBC35219909FB00B093BA /* TSNaviAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimationManager.m; sourceTree = "<group>"; };
-		6C7EBC37219925C300B093BA /* AAAAAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAAAAViewController.h; sourceTree = "<group>"; };
-		6C7EBC38219925C300B093BA /* AAAAAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAAAAViewController.m; sourceTree = "<group>"; };
+		6C7EBC3A219AC69E00B093BA /* TSMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeViewController.h; sourceTree = "<group>"; };
+		6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeViewController.m; sourceTree = "<group>"; };
+		6C7EBC3D219AC6B800B093BA /* TSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHomeViewController.h; sourceTree = "<group>"; };
+		6C7EBC3E219AC6B800B093BA /* TSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHomeViewController.m; sourceTree = "<group>"; };
+		6C7EBC40219AE0D700B093BA /* TSUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSUserInfoViewController.h; sourceTree = "<group>"; };
+		6C7EBC41219AE0D700B093BA /* TSUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSUserInfoViewController.m; sourceTree = "<group>"; };
+		6C7EBC43219AE3DC00B093BA /* TSAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAlertDemoViewController.h; sourceTree = "<group>"; };
+		6C7EBC44219AE3DC00B093BA /* TSAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAlertDemoViewController.m; sourceTree = "<group>"; };
+		6C7EBC46219AE6C200B093BA /* TSBottomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBottomViewController.h; sourceTree = "<group>"; };
+		6C7EBC47219AE6C200B093BA /* TSBottomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBottomViewController.m; sourceTree = "<group>"; };
+		6C7EBC49219AEC9700B093BA /* TSOrderConfirmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSOrderConfirmViewController.h; sourceTree = "<group>"; };
+		6C7EBC4A219AEC9700B093BA /* TSOrderConfirmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSOrderConfirmViewController.m; sourceTree = "<group>"; };
 		6CA192A220E5CC1D00E21E41 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		6CA192A320E5CC1D00E21E41 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		6CA192A520E773A400E21E41 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		6CA192A620E773A400E21E41 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		6CA192A820E773CE00E21E41 /* VideoBroadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoBroadViewController.h; sourceTree = "<group>"; };
-		6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoBroadViewController.m; sourceTree = "<group>"; };
-		6CA192AB20E773EC00E21E41 /* NoNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoNaviViewController.h; sourceTree = "<group>"; };
-		6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoNaviViewController.m; sourceTree = "<group>"; };
-		6CA192AE20E773F800E21E41 /* HasNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
-		6CA192AF20E773F800E21E41 /* HasNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
 		6CB42F872196F7D100F48644 /* TSTransitionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTransitionKit.h; sourceTree = "<group>"; };
 		6CD91B0C20DA2C7200DC0F6A /* TSTSTransionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTSTransionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD91B0F20DA2C7200DC0F6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6CD91B1220DA2C7200DC0F6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6CD91B1320DA2C7200DC0F6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD91B1B20DA2C7200DC0F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD91B1D20DA2C7200DC0F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,21 +187,21 @@
 				6CD91B4720DA39E700DC0F6A /* Code */,
 				6CD91B0F20DA2C7200DC0F6A /* AppDelegate.h */,
 				6CD91B1020DA2C7200DC0F6A /* AppDelegate.m */,
-				6CD91B1220DA2C7200DC0F6A /* ViewController.h */,
-				6CD91B1320DA2C7200DC0F6A /* ViewController.m */,
-				6CA192AB20E773EC00E21E41 /* NoNaviViewController.h */,
-				6CA192AC20E773EC00E21E41 /* NoNaviViewController.m */,
-				6C7EBC37219925C300B093BA /* AAAAAViewController.h */,
-				6C7EBC38219925C300B093BA /* AAAAAViewController.m */,
-				6CA192AE20E773F800E21E41 /* HasNaviViewController.h */,
-				6CA192AF20E773F800E21E41 /* HasNaviViewController.m */,
-				6CA192A820E773CE00E21E41 /* VideoBroadViewController.h */,
-				6CA192A920E773CE00E21E41 /* VideoBroadViewController.m */,
 				6CEA83AC219326DD00F51F2E /* TSConfig.plist */,
-				6CA192A520E773A400E21E41 /* VideoViewController.h */,
-				6CA192A620E773A400E21E41 /* VideoViewController.m */,
 				6CA192A220E5CC1D00E21E41 /* MainViewController.h */,
 				6CA192A320E5CC1D00E21E41 /* MainViewController.m */,
+				6C7EBC3A219AC69E00B093BA /* TSMeViewController.h */,
+				6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */,
+				6C7EBC40219AE0D700B093BA /* TSUserInfoViewController.h */,
+				6C7EBC41219AE0D700B093BA /* TSUserInfoViewController.m */,
+				6C7EBC3D219AC6B800B093BA /* TSHomeViewController.h */,
+				6C7EBC3E219AC6B800B093BA /* TSHomeViewController.m */,
+				6C7EBC49219AEC9700B093BA /* TSOrderConfirmViewController.h */,
+				6C7EBC4A219AEC9700B093BA /* TSOrderConfirmViewController.m */,
+				6C7EBC46219AE6C200B093BA /* TSBottomViewController.h */,
+				6C7EBC47219AE6C200B093BA /* TSBottomViewController.m */,
+				6C7EBC43219AE3DC00B093BA /* TSAlertDemoViewController.h */,
+				6C7EBC44219AE3DC00B093BA /* TSAlertDemoViewController.m */,
 				6CD91B1820DA2C7200DC0F6A /* Assets.xcassets */,
 				6CD91B1A20DA2C7200DC0F6A /* LaunchScreen.storyboard */,
 				6CD91B1D20DA2C7200DC0F6A /* Info.plist */,
@@ -468,26 +468,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CD91B1420DA2C7200DC0F6A /* ViewController.m in Sources */,
+				6C7EBC3F219AC6B800B093BA /* TSHomeViewController.m in Sources */,
 				6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */,
 				6CEA83A52192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
-				6CA192A720E773A400E21E41 /* VideoViewController.m in Sources */,
 				6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */,
+				6C7EBC48219AE6C200B093BA /* TSBottomViewController.m in Sources */,
 				6CEA83A42192F3F000F51F2E /* TSBaseAnimation.m in Sources */,
 				6CEA83AB219320F300F51F2E /* UINavigationController+Transition.m in Sources */,
-				6CA192AA20E773CE00E21E41 /* VideoBroadViewController.m in Sources */,
 				6CEA83B02193367700F51F2E /* TSNaviBottomUpViewController.m in Sources */,
-				6C7EBC39219925C300B093BA /* AAAAAViewController.m in Sources */,
 				6CE779062196D92D004A6C44 /* TSAlertView.m in Sources */,
 				6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */,
 				6C7EBC36219909FB00B093BA /* TSNaviAnimationManager.m in Sources */,
-				6CA192AD20E773EC00E21E41 /* NoNaviViewController.m in Sources */,
 				6CEA83B32193379D00F51F2E /* TSAlertTransition.m in Sources */,
+				6C7EBC3C219AC69E00B093BA /* TSMeViewController.m in Sources */,
+				6C7EBC45219AE3DC00B093BA /* TSAlertDemoViewController.m in Sources */,
 				6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */,
+				6C7EBC42219AE0D700B093BA /* TSUserInfoViewController.m in Sources */,
+				6C7EBC4B219AEC9700B093BA /* TSOrderConfirmViewController.m in Sources */,
 				6CEA83B62193F06C00F51F2E /* TSAlertTransitionController.m in Sources */,
 				6CEA83A32192F3F000F51F2E /* TSNaviAnimation.m in Sources */,
-				6CA192B020E773F800E21E41 /* HasNaviViewController.m in Sources */,
 				6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */,
 				6CEA83A82192F47100F51F2E /* TSBaseViewController+TS_Transition.m in Sources */,
 			);

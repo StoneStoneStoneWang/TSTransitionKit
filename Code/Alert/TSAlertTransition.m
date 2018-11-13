@@ -27,13 +27,6 @@
     
     UIViewController *from = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
-    if ([from isKindOfClass:[UITabBarController class]]) {
-        
-        NSLog(@"UITabBarController");
-        
-        NSLog(@"%@",from.view.subviews);
-    }
-    
     UIView *fromView = from.view;
     
     UIView *toView = to.view;
@@ -56,8 +49,6 @@
     
     toView.frame = CGRectMake(0, 0, w, h);
     
-//    toView.alpha = 0;
-    
     UIView *cover = [[UIView alloc] initWithFrame:toView.bounds];
     
     cover.backgroundColor = [UIColor blackColor];
@@ -78,20 +69,14 @@
     }];
 }
 - (void)dismiss:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
-//    UIViewController *to = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
 
-    UIViewController *to = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+//    UIViewController *to = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIViewController *from = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
     UIView *fromView = from.view;
     
-//    UIView *toView = to.view;
-    
     UIView *containerView = transitionContext.containerView;
-    
-//    NSLog(@"%@",containerView.subviews);
     
     UIView *temp = containerView.subviews[0];
     
@@ -109,8 +94,6 @@
     
     fromView.frame = CGRectMake(0, 0, w, h);
     
-//    [containerView addSubview:toView];
-    
     [UIView animateWithDuration:duration animations:^{
         
         cover.alpha = 0;
@@ -122,8 +105,6 @@
             [transitionContext completeTransition:true];
             
             [fromView removeFromSuperview];
-            
-            //        [toView removeFromSuperview];
             
             [temp removeFromSuperview];
         }

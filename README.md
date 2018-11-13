@@ -12,6 +12,6 @@ pod 'TSTransitionKit',:git=>'https://github.com/StoneStoneStoneWang/TSTransition
 
 ## TSAlertTransition
 
-## TSBottomUpTransition
+## TSBottomUpTransition (仅供参考)
 
 ## 之后可能会增加新的好玩的转场
