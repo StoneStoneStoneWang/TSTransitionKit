@@ -10,7 +10,9 @@
 		6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938620FEBA6000B0BCBE /* TSBaseTransitionViewController.m */; };
 		6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */; };
 		6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */; };
-		6C7EBC36219909FB00B093BA /* TSNaviAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC35219909FB00B093BA /* TSNaviAnimationManager.m */; };
+		6C72740421AEC35300E29C63 /* TSNaviAnimationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C72740321AEC35300E29C63 /* TSNaviAnimationConfig.m */; };
+		6C72740B21AF833F00E29C63 /* UINavigationControllerTransitionImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C72740A21AF833F00E29C63 /* UINavigationControllerTransitionImpl.m */; };
+		6C72740E21AF858F00E29C63 /* TSNavigationController+Impl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C72740D21AF858F00E29C63 /* TSNavigationController+Impl.m */; };
 		6C7EBC3C219AC69E00B093BA /* TSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */; };
 		6C7EBC3F219AC6B800B093BA /* TSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC3E219AC6B800B093BA /* TSHomeViewController.m */; };
 		6C7EBC42219AE0D700B093BA /* TSUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBC41219AE0D700B093BA /* TSUserInfoViewController.m */; };
@@ -28,8 +30,7 @@
 		6CE779062196D92D004A6C44 /* TSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE779052196D92D004A6C44 /* TSAlertView.m */; };
 		6CEA83A32192F3F000F51F2E /* TSNaviAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */; };
 		6CEA83A42192F3F000F51F2E /* TSBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */; };
-		6CEA83A52192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */; };
-		6CEA83A82192F47100F51F2E /* TSBaseViewController+TS_Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */; };
+		6CEA83A82192F47100F51F2E /* UIViewController+TS_Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83A72192F47100F51F2E /* UIViewController+TS_Transition.m */; };
 		6CEA83AB219320F300F51F2E /* UINavigationController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83AA219320F300F51F2E /* UINavigationController+Transition.m */; };
 		6CEA83AD219326DD00F51F2E /* TSConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA83AC219326DD00F51F2E /* TSConfig.plist */; };
 		6CEA83B02193367700F51F2E /* TSNaviBottomUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA83AF2193367700F51F2E /* TSNaviBottomUpViewController.m */; };
@@ -64,8 +65,13 @@
 		6C4E938920FF0B8B00B0BCBE /* TSBaseTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseTransition.m; sourceTree = "<group>"; };
 		6C4E938B20FF103500B0BCBE /* TSBottomUpTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBottomUpTransition.h; sourceTree = "<group>"; };
 		6C4E938C20FF103500B0BCBE /* TSBottomUpTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBottomUpTransition.m; sourceTree = "<group>"; };
-		6C7EBC34219909FB00B093BA /* TSNaviAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimationManager.h; sourceTree = "<group>"; };
-		6C7EBC35219909FB00B093BA /* TSNaviAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimationManager.m; sourceTree = "<group>"; };
+		6C72740221AEC35300E29C63 /* TSNaviAnimationConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimationConfig.h; sourceTree = "<group>"; };
+		6C72740321AEC35300E29C63 /* TSNaviAnimationConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimationConfig.m; sourceTree = "<group>"; };
+		6C72740821AECC3600E29C63 /* TSViewControllerPushAnimationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSViewControllerPushAnimationDelegate.h; sourceTree = "<group>"; };
+		6C72740921AF833F00E29C63 /* UINavigationControllerTransitionImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerTransitionImpl.h; sourceTree = "<group>"; };
+		6C72740A21AF833F00E29C63 /* UINavigationControllerTransitionImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerTransitionImpl.m; sourceTree = "<group>"; };
+		6C72740C21AF858F00E29C63 /* TSNavigationController+Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSNavigationController+Impl.h"; sourceTree = "<group>"; };
+		6C72740D21AF858F00E29C63 /* TSNavigationController+Impl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TSNavigationController+Impl.m"; sourceTree = "<group>"; };
 		6C7EBC3A219AC69E00B093BA /* TSMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeViewController.h; sourceTree = "<group>"; };
 		6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeViewController.m; sourceTree = "<group>"; };
 		6C7EBC3D219AC6B800B093BA /* TSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHomeViewController.h; sourceTree = "<group>"; };
@@ -100,11 +106,9 @@
 		6CEA839D2192F3F000F51F2E /* TSBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseAnimation.h; sourceTree = "<group>"; };
 		6CEA839E2192F3F000F51F2E /* TSNaviAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimation.h; sourceTree = "<group>"; };
 		6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimation.m; sourceTree = "<group>"; };
-		6CEA83A02192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
 		6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseAnimation.m; sourceTree = "<group>"; };
-		6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
-		6CEA83A62192F47100F51F2E /* TSBaseViewController+TS_Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSBaseViewController+TS_Transition.h"; sourceTree = "<group>"; };
-		6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TSBaseViewController+TS_Transition.m"; sourceTree = "<group>"; };
+		6CEA83A62192F47100F51F2E /* UIViewController+TS_Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TS_Transition.h"; sourceTree = "<group>"; };
+		6CEA83A72192F47100F51F2E /* UIViewController+TS_Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TS_Transition.m"; sourceTree = "<group>"; };
 		6CEA83A9219320F300F51F2E /* UINavigationController+Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transition.h"; sourceTree = "<group>"; };
 		6CEA83AA219320F300F51F2E /* UINavigationController+Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transition.m"; sourceTree = "<group>"; };
 		6CEA83AC219326DD00F51F2E /* TSConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TSConfig.plist; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				6C7EBC3B219AC69E00B093BA /* TSMeViewController.m */,
 				6C7EBC40219AE0D700B093BA /* TSUserInfoViewController.h */,
 				6C7EBC41219AE0D700B093BA /* TSUserInfoViewController.m */,
+				6C72740C21AF858F00E29C63 /* TSNavigationController+Impl.h */,
+				6C72740D21AF858F00E29C63 /* TSNavigationController+Impl.m */,
 				6C7EBC3D219AC6B800B093BA /* TSHomeViewController.h */,
 				6C7EBC3E219AC6B800B093BA /* TSHomeViewController.m */,
 				6C7EBC49219AEC9700B093BA /* TSOrderConfirmViewController.h */,
@@ -247,14 +253,15 @@
 				6CEA83A12192F3F000F51F2E /* TSBaseAnimation.m */,
 				6CEA839E2192F3F000F51F2E /* TSNaviAnimation.h */,
 				6CEA839F2192F3F000F51F2E /* TSNaviAnimation.m */,
-				6C7EBC34219909FB00B093BA /* TSNaviAnimationManager.h */,
-				6C7EBC35219909FB00B093BA /* TSNaviAnimationManager.m */,
-				6CEA83A02192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.h */,
-				6CEA83A22192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m */,
-				6CEA83A62192F47100F51F2E /* TSBaseViewController+TS_Transition.h */,
-				6CEA83A72192F47100F51F2E /* TSBaseViewController+TS_Transition.m */,
+				6C72740221AEC35300E29C63 /* TSNaviAnimationConfig.h */,
+				6C72740321AEC35300E29C63 /* TSNaviAnimationConfig.m */,
+				6C72740821AECC3600E29C63 /* TSViewControllerPushAnimationDelegate.h */,
+				6CEA83A62192F47100F51F2E /* UIViewController+TS_Transition.h */,
+				6CEA83A72192F47100F51F2E /* UIViewController+TS_Transition.m */,
 				6CEA83A9219320F300F51F2E /* UINavigationController+Transition.h */,
 				6CEA83AA219320F300F51F2E /* UINavigationController+Transition.m */,
+				6C72740921AF833F00E29C63 /* UINavigationControllerTransitionImpl.h */,
+				6C72740A21AF833F00E29C63 /* UINavigationControllerTransitionImpl.m */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -468,10 +475,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C72740B21AF833F00E29C63 /* UINavigationControllerTransitionImpl.m in Sources */,
 				6C7EBC3F219AC6B800B093BA /* TSHomeViewController.m in Sources */,
 				6C4E938D20FF103500B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6CD91B1F20DA2C7200DC0F6A /* main.m in Sources */,
-				6CEA83A52192F3F000F51F2E /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6CA192A420E5CC1D00E21E41 /* MainViewController.m in Sources */,
 				6C7EBC48219AE6C200B093BA /* TSBottomViewController.m in Sources */,
 				6CEA83A42192F3F000F51F2E /* TSBaseAnimation.m in Sources */,
@@ -479,9 +486,10 @@
 				6CEA83B02193367700F51F2E /* TSNaviBottomUpViewController.m in Sources */,
 				6CE779062196D92D004A6C44 /* TSAlertView.m in Sources */,
 				6C4E938720FEBA6000B0BCBE /* TSBaseTransitionViewController.m in Sources */,
-				6C7EBC36219909FB00B093BA /* TSNaviAnimationManager.m in Sources */,
+				6C72740421AEC35300E29C63 /* TSNaviAnimationConfig.m in Sources */,
 				6CEA83B32193379D00F51F2E /* TSAlertTransition.m in Sources */,
 				6C7EBC3C219AC69E00B093BA /* TSMeViewController.m in Sources */,
+				6C72740E21AF858F00E29C63 /* TSNavigationController+Impl.m in Sources */,
 				6C7EBC45219AE3DC00B093BA /* TSAlertDemoViewController.m in Sources */,
 				6CD91B1120DA2C7200DC0F6A /* AppDelegate.m in Sources */,
 				6C7EBC42219AE0D700B093BA /* TSUserInfoViewController.m in Sources */,
@@ -489,7 +497,7 @@
 				6CEA83B62193F06C00F51F2E /* TSAlertTransitionController.m in Sources */,
 				6CEA83A32192F3F000F51F2E /* TSNaviAnimation.m in Sources */,
 				6C4E938A20FF0B8B00B0BCBE /* TSBaseTransition.m in Sources */,
-				6CEA83A82192F47100F51F2E /* TSBaseViewController+TS_Transition.m in Sources */,
+				6CEA83A82192F47100F51F2E /* UIViewController+TS_Transition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

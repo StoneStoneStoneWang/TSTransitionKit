@@ -11,14 +11,13 @@
 
 #import "TSNaviAnimation.h"
 
-#import "UIViewController+AnimationTransitioningSnapshot.h"
-
-#import "TSBaseViewController+TS_Transition.h"
+#import "UIViewController+TS_Transition.h"
 
 #import "UINavigationController+Transition.h"
 
-#import "TSNaviAnimationManager.h"
+#import "TSViewControllerPushAnimationDelegate.h"
 
+#import "TSNaviAnimationConfig.h"
 // present
 
 #import "TSBaseTransition.h"

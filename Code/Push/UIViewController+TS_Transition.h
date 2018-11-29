@@ -9,34 +9,17 @@
 #import "TSBaseViewController.h"
 #import "TSNaviAnimation.h"
 #import "TSNavigationController.h"
+#import "TSViewControllerPushAnimationDelegate.h"
+
 typedef NS_ENUM(NSInteger ,TSPanResponseType) {
     
     TSPanResponseTypeDefault = 0, // 默认响应是左边100
     
-    TSPanResponseTypeFull, // 默认响应是左边100
+    TSPanResponseTypeFull, // 默认响应全屏
     
     TSPanResponseTypeCustom
 };
 
-@protocol TSViewControllerPushAnimationDelegate <NSObject>
-
-- (BOOL )ts_prefersNavigationBarHidden;
-
-- (BOOL )ts_prefersStatusBarHidden;
-
-- (BOOL )ts_prefersTabbarHidden;
-
-@property(nonatomic, strong) UIPercentDrivenInteractiveTransition *ts_interactivePopTransition;
-
-- (NSInteger )ts_naviChildViewControllersCount;
-
-- (UITabBarController *)get_Ts_tabbarController;
-
-- (TSNavigationController *)get_Ts_naviController;
-
-- (UIView *)get_Ts_childView;
-
-@end
 
 @interface UIViewController (AnimationDelegate) <TSBaseAnimationDelegate>
 
@@ -66,7 +49,7 @@ typedef NS_ENUM(NSInteger ,TSPanResponseType) {
 @end
 
 
-@interface TSBaseViewController (TS_Transition) <UIGestureRecognizerDelegate ,TSViewControllerPushAnimationDelegate>
+@interface UIViewController (TS_Transition) <UIGestureRecognizerDelegate ,TSViewControllerPushAnimationDelegate>
 
 // 由于 addchildvc 会使childvc也添加了pan所以 增加了这个函数 是否添加
 
@@ -101,21 +84,14 @@ typedef NS_ENUM(NSInteger ,TSPanResponseType) {
 - (BOOL )ts_prefersNavigationBarHidden;
 
 /*
- 状态是否隐藏。这个先弃用吧
- */
-- (BOOL )ts_prefersStatusBarHidden;
-/*
  tabbar是否隐藏
  */
 - (BOOL )ts_prefersTabbarHidden;
 
-// 获取导航childvc的数量
-- (NSInteger)ts_naviChildViewControllersCount;
-
 // 获取导航tabbar
 - (UITabBarController *)get_Ts_tabbarController;
 // 获取导航navi
-- (TSNavigationController *)get_Ts_naviController;
+- (UINavigationController *)get_Ts_naviController;
 // 获取导航self.view
 - (UIView *)get_Ts_childView ;
 
@@ -123,6 +99,8 @@ typedef NS_ENUM(NSInteger ,TSPanResponseType) {
  * UIPercentDrivenInteractiveTransition
  */
 @property(nonatomic, strong) UIPercentDrivenInteractiveTransition *ts_interactivePopTransition;
+
+@property (nonatomic ,strong) TSNaviAnimationConfig *__config;
 
 @end
 

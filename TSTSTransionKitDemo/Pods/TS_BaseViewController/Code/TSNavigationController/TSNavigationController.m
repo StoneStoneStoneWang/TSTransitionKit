@@ -73,7 +73,7 @@ static TSConfigUtil *manager = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.delegate = self;
+//    self.delegate = self;
     
     self.transitionType = TSNavigationTransionTypePush;
 }

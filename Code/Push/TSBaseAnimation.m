@@ -96,6 +96,7 @@
         [self popEnded];
     }
 }
+
 - (void)popCancled {
     
     if (_mDelegate && [_mDelegate respondsToSelector:@selector(popCancled)]) {

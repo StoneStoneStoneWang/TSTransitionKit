@@ -6,7 +6,7 @@
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
-#import "TSBaseViewController+TS_Transition.h"
+#import "UIViewController+TS_Transition.h"
 #import "TSNavigationController.h"
 #import "UIColor+ColorTool.h"
 #import <objc/runtime.h>
@@ -43,19 +43,34 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 
 - (void)popCancled {}
 @end
+static const char * ipKey = "ipKey";
+
+static const char * prtKey = "prtKey";
+
+static const char * coKey = "coKey";
+
 
 @implementation TSBaseViewController (TS_Transition)
 
 - (void)setTs_interactivePopTransition:(UIPercentDrivenInteractiveTransition *)ts_interactivePopTransition {
     
-    objc_setAssociatedObject(self, @"ts_interactivePopTransition", ts_interactivePopTransition, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, ipKey, ts_interactivePopTransition, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UIPercentDrivenInteractiveTransition *)ts_interactivePopTransition {
     
-    return objc_getAssociatedObject(self, @"ts_interactivePopTransition");
+    return objc_getAssociatedObject(self, ipKey);
 }
 
+- (void)set__config:(TSNaviAnimationConfig *)__config {
+    
+    objc_setAssociatedObject(self, coKey, __config, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (TSNaviAnimationConfig *)__config {
+    
+    return objc_getAssociatedObject(self, coKey);
+}
 + (void)load {
     
     [super load];
@@ -68,25 +83,26 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 }
 - (void)setPanResponseType:(TSPanResponseType)panResponseType {
     
-    objc_setAssociatedObject(self, @"panResponseType", @(panResponseType), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, prtKey, @(panResponseType), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (TSPanResponseType)panResponseType {
     
-    return [objc_getAssociatedObject(self, @"panResponseType") integerValue];
+    return [objc_getAssociatedObject(self, prtKey) integerValue];
 }
 - (void)__ts__viewDidLoad {
     [self __ts__viewDidLoad];
     
-    //由于方法已经被交换,这里调用的实际上是viewDidLoad方法
+    //由于方法已经被交换,这里调用的实际上是自己的viewdidload
     
     if ([self isAddPopPan]) {
         
         [self addPopPanGesture];
     }
 }
+
 - (void)addPopPanGesture {
-    
+    //
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
     {
         UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];
@@ -96,6 +112,7 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
         popRecognizer.delegate = self;
     }
 }
+
 - (BOOL)isAddPopPan {
     
     return true;
@@ -107,7 +124,6 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     
     progress = MIN(1.0, MAX(0.0, progress));
     
-    //    NSLog(@"progress---%.2f",progress);
     if (recognizer.state == UIGestureRecognizerStateBegan)
     {
         self.ts_interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc]init];
@@ -135,17 +151,17 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
 {
     switch (self.panResponseType) {
-        case TSPanResponseTypeDefault:
+            case TSPanResponseTypeDefault:
         {
             BOOL result = [gestureRecognizer velocityInView:self.view].x > 0 && [gestureRecognizer locationInView:self.view].x < TS_PanResponseW;
             
             return result;
         }
-        case TSPanResponseTypeFull:
+            case TSPanResponseTypeFull:
         {
             return [gestureRecognizer velocityInView:self.view].x > 0;
         }
-        case TSPanResponseTypeCustom:
+            case TSPanResponseTypeCustom:
         {
             BOOL result = [gestureRecognizer velocityInView:self.view].x > 0 && [gestureRecognizer locationInView:self.view].x < self.popPanResponseW;
             
@@ -187,9 +203,9 @@ void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     return self.tabBarController;
 }
 
-- (TSNavigationController *)get_Ts_naviController {
+- (UINavigationController *)get_Ts_naviController {
     
-    return (TSNavigationController *)self.navigationController;
+    return self.navigationController;
 }
 
 - (UIView *)get_Ts_childView {

@@ -7,7 +7,7 @@
 //
 
 #import "TSUserInfoViewController.h"
-#import "TSBaseViewController+TS_Transition.h"
+#import "UIViewController+TS_Transition.h"
 @interface TSUserInfoViewController ()
 
 @end

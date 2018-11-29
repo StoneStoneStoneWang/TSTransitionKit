@@ -7,40 +7,55 @@
 //
 
 #import "UINavigationController+Transition.h"
-#import "TSNaviAnimation.h"
-#import "TSBaseViewController+TS_Transition.h"
+#import <objc/runtime.h>
+void __ts__swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    
+    BOOL didAddMethod =
+    class_addMethod(class,
+                    originalSelector,
+                    method_getImplementation(swizzledMethod),
+                    method_getTypeEncoding(swizzledMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod(class,
+                            swizzledSelector,
+                            method_getImplementation(originalMethod),
+                            method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
+static const char * implKey = "implKey";
 @implementation UINavigationController (Transition)
 
-- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
-                                   interactionControllerForAnimationController:(TSBaseAnimation *) animationController
-{
-    return animationController.ts_interactivePopTransition;
+- (void)set__impl:(UINavigationControllerTransitionImpl *)__impl {
+    
+    objc_setAssociatedObject(self, implKey, __impl, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (UINavigationControllerTransitionImpl *)__impl {
+    
+    return objc_getAssociatedObject(self, implKey);
 }
 
-- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                            animationControllerForOperation:(UINavigationControllerOperation)operation
-                                                         fromViewController:(id <TSViewControllerPushAnimationDelegate>)fromVC
-                                                           toViewController:(UIViewController *)toVC
-{
++ (void)load {
     
-    if (fromVC.ts_interactivePopTransition != nil)
-    {
-        TSNaviAnimation *animation = [[TSNaviAnimation alloc] initWithType:operation Duration:0.3];
+    [super load];
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         
-        animation.ts_interactivePopTransition = fromVC.ts_interactivePopTransition;
-        
-        [animation setDelegate:(UIViewController *)fromVC];
-        
-        return animation; //手势
-    }
-    else
-    {
-        TSNaviAnimation *animation = [[TSNaviAnimation alloc]initWithType:operation Duration:0.6];
-        
-        [animation setDelegate:(UIViewController *)fromVC];
-        
-        return animation;//非手势
-    }
+        __ts__swizzleMethod([self class], @selector(viewDidLoad), @selector(__ts__navi__viewDidLoad));
+    });
+}
+
+- (void)__ts__navi__viewDidLoad {
+    [self __ts__navi__viewDidLoad];
+
+    self.__impl = [UINavigationControllerTransitionImpl new];
+    
+    self.delegate = self.__impl;
 }
 
 @end

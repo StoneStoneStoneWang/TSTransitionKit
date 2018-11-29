@@ -7,7 +7,7 @@
 //
 
 #import "TSMeViewController.h"
-#import "TSBaseViewController+TS_Transition.h"
+#import "UIViewController+TS_Transition.h"
 #import "TSUserInfoViewController.h"
 @interface TSMeViewController () <UITableViewDelegate ,UITableViewDataSource>
 

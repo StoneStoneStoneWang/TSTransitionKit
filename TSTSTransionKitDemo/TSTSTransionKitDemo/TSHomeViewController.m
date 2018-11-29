@@ -7,12 +7,13 @@
 //
 
 #import "TSHomeViewController.h"
-#import "TSBaseViewController+TS_Transition.h"
+#import "UIViewController+TS_Transition.h"
 #import "TSUserInfoViewController.h"
 #import "TSAlertDemoViewController.h"
 #import "TSNaviBottomUpViewController.h"
 #import "TSBottomViewController.h"
 #import "TSOrderConfirmViewController.h"
+#import "UINavigationController+Transition.h"
 @interface TSHomeViewController ()
 
 @end
