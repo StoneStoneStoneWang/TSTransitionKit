@@ -8,7 +8,7 @@
 
 #import "UINavigationController+Transition.h"
 #import <objc/runtime.h>
-void __ts__swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
+void __ts__navi__swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
     Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
     
@@ -46,7 +46,7 @@ static const char * implKey = "implKey";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        __ts__swizzleMethod([self class], @selector(viewDidLoad), @selector(__ts__navi__viewDidLoad));
+        __ts__navi__swizzleMethod([self class], @selector(viewDidLoad), @selector(__ts__navi__viewDidLoad));
     });
 }
 

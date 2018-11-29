@@ -12,7 +12,7 @@
 #import <objc/runtime.h>
 // 利用Category 和Runtime实行方法hook hook方案有一个好处,就是可以避免代码入侵,做到更加广泛的通用性.通过swizzling我们可以将原method与自己加入的method相结合,即不需要在原有工程中加入代码,又能做到全局覆盖
 
-void __ts_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
+void __ts__view__swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
     Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
     
@@ -78,7 +78,7 @@ static const char * coKey = "coKey";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        __ts_swizzleMethod([self class], @selector(viewDidLoad), @selector(__ts__viewDidLoad));
+        __ts__view__swizzleMethod([self class], @selector(viewDidLoad), @selector(__ts__viewDidLoad));
     });
 }
 - (void)setPanResponseType:(TSPanResponseType)panResponseType {
